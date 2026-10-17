@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAMUSH CAFE PH | Late-Night Brews & Gourmet Eats in Imus, Cavite</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#1A0C08',
+                        roast: '#2C1810',
+                        caramel: '#8B5E3C',
+                        amberGlow: '#D4A373',
+                        cream: '#FAEDCD',
+                        softCream: '#FEFAE0',
+                        warmBg: '#FDFBF7',
+                        accentGold: '#E6A15C'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FDFBF7;
+            color: #2C1810;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background: linear-gradient(180deg, rgba(26, 12, 8, 0.75) 0%, rgba(44, 24, 16, 0.88) 100%), 
+                        url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 163, 115, 0.25);
+        }
+        .glass-dark {
+            background: rgba(44, 24, 16, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 163, 115, 0.2);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAEDCD;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8B5E3C;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2C1810;
+        }
+        .tab-btn.active {
+            background-color: #2C1810;
+            color: #FAEDCD;
+            border-color: #2C1810;
+            box-shadow: 0 4px 14px rgba(44, 24, 16, 0.25);
+        }
+
+        /* Configurable Icon Box Styles */
+        .icon-box {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: justify;
+            align-items: center;
+            justify-content: center;
+            background-color: #2C1810;
+            color: #FAEDCD;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .icon-box svg, .icon-box i {
+            width: 1.5rem;
+            height: 1.5rem;
+            stroke-width: 2;
+        }
+        .icon-box img.icon-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+        .icon-box-accent {
+            background-color: #D4A373;
+            color: #1A0C08;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amberGlow selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-roast text-cream text-xs sm:text-sm py-2 px-4 text-center font-medium flex items-center justify-center gap-2 border-b border-amberGlow/20">
+        <span class="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+        <span>Open Today 1:00 PM – 2:00 AM | Late-Night Coffee & Comfort Eats in Imus!</span>
+        <a href="#reservation" class="underline hover:text-amberGlow transition-colors hidden sm:inline ml-2">Book a Table →</a>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-warmBg/90 backdrop-blur-md border-b border-amberGlow/15 transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-full bg-roast text-cream flex items-center justify-center font-serif text-xl font-bold shadow-md group-hover:bg-caramel transition-colors border-2 border-amberGlow/50">
+                    M
+                </div>
+                <div>
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-roast block leading-none">MAMUSH</span>
+                    <span class="text-[10px] tracking-[0.25em] font-semibold text-caramel uppercase block mt-1">CAFE PH • IMUS</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-roast">
+                <a href="#about" class="hover:text-caramel transition-colors">About Us</a>
+                <a href="#menu" class="hover:text-caramel transition-colors">Our Menu</a>
+                <a href="#loyalty" class="hover:text-caramel transition-colors">Loyalty Card</a>
+                <a href="#features" class="hover:text-caramel transition-colors">Why Mamush</a>
+                <a href="#reviews" class="hover:text-caramel transition-colors">Reviews</a>
+                <a href="#location" class="hover:text-caramel transition-colors">Visit & Contact</a>
+            </nav>
+
+            <!-- Header Action Buttons -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="tel:+639669583030" class="text-roast hover:text-caramel p-2 rounded-full border border-roast/15 hover:border-caramel text-sm flex items-center gap-2 transition-all">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    <span class="text-xs font-semibold">+63 966 958 3030</span>
+                </a>
+                <button onclick="openModal('reserveModal')" class="bg-roast hover:bg-caramel text-cream px-5 py-2.5 rounded-full font-medium text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                    Reserve Table
+                </button>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-xl border border-roast/20 text-roast hover:bg-cream transition-colors" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-warmBg border-b border-amberGlow/20 px-4 pt-3 pb-6 shadow-xl transition-all">
+            <nav class="flex flex-col space-y-3 font-medium text-roast text-base">
+                <a href="#about" onclick="toggleMobileMenu()" class="py-2 border-b border-roast/5 flex items-center justify-between">
+                    <span>About Us</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                </a>
+                <a href="#menu" onclick="toggleMobileMenu()" class="py-2 border-b border-roast/5 flex items-center justify-between">
+                    <span>Our Menu</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                </a>
+                <a href="#loyalty" onclick="toggleMobileMenu()" class="py-2 border-b border-roast/5 flex items-center justify-between">
+                    <span>Loyalty Card</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                </a>
+                <a href="#features" onclick="toggleMobileMenu()" class="py-2 border-b border-roast/5 flex items-center justify-between">
+                    <span>Why Mamush</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                </a>
+                <a href="#reviews" onclick="toggleMobileMenu()" class="py-2 border-b border-roast/5 flex items-center justify-between">
+                    <span>Customer Reviews</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                </a>
+                <a href="#location" onclick="toggleMobileMenu()" class="py-2 border-b border-roast/5 flex items-center justify-between">
+                    <span>Location & Hours</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                </a>
+            </nav>
+            <div class="mt-5 flex flex-col gap-2.5">
+                <button onclick="toggleMobileMenu(); openModal('reserveModal');" class="w-full text-center bg-roast text-cream font-medium py-3 rounded-xl shadow-md">
+                    Reserve Table / Inquiry
+                </button>
+                <a href="https://www.google.com/maps/place/MAMUSH+CAFE+PH" target="_blank" class="w-full text-center bg-cream border border-roast/20 text-roast font-medium py-2.5 rounded-xl flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-location-dot text-caramel"></i> Get Google Directions
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[85vh] hero-bg flex items-center justify-center text-cream px-4 py-16 sm:py-24">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <!-- Badges Bar -->
+            <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-espresso/80 backdrop-blur-md px-4 py-2 rounded-full border border-amberGlow/30 mb-8 shadow-xl">
+                <span class="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-amberGlow">
+                    <i class="fa-solid fa-star text-amber-400"></i> 4.9 Rating (237+ Reviews)
+                </span>
+                <span class="text-amberGlow/40">•</span>
+                <span class="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-cream">
+                    <i class="fa-solid fa-paw text-amberGlow"></i> 100% Pet Friendly
+                </span>
+                <span class="text-amberGlow/40">•</span>
+                <span class="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-cream">
+                    <i class="fa-solid fa-moon text-amberGlow"></i> Open till 2:00 AM
+                </span>
+            </div>
+
+            <h1 class="font-playfair text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-softCream">
+                Handcrafted Flavors, Late-Night Brews & Cozy Vibes
+            </h1>
+            <p class="text-base sm:text-xl text-cream/90 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Welcome to <span class="font-semibold text-amberGlow">MAMUSH CAFE PH</span> in Imus, Cavite. Enjoy scratch-made pastas, gourmet burgers, specialty coffee, and alfresco dining with your fur babies.
+            </p>
+
+            <!-- Call to Actions -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+                <a href="#menu" class="w-full sm:w-auto bg-amberGlow hover:bg-caramel text-espresso hover:text-cream font-bold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-2xl flex items-center justify-center gap-2 text-base">
+                    <i class="fa-solid fa-mug-hot"></i> Explore Our Menu
+                </a>
+                <button onclick="openModal('reserveModal')" class="w-full sm:w-auto bg-warmBg/10 hover:bg-warmBg/20 border border-cream/30 backdrop-blur-md text-cream font-semibold px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2 text-base">
+                    <i class="fa-solid fa-calendar-check text-amberGlow"></i> Reserve / Order
+                </button>
+            </div>
+
+            <!-- Highlights Quick Strip -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-16 text-left max-w-4xl mx-auto pt-8 border-t border-cream/15">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amberGlow/20 flex items-center justify-center text-amberGlow flex-shrink-0">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-cream/70">Work Friendly</p>
+                        <p class="text-sm font-semibold text-cream">Power Outlets Available</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amberGlow/20 flex items-center justify-center text-amberGlow flex-shrink-0">
+                        <i class="fa-solid fa-dog"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-cream/70">Pet Friendly</p>
+                        <p class="text-sm font-semibold text-cream">Indoor & Alfresco Dining</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amberGlow/20 flex items-center justify-center text-amberGlow flex-shrink-0">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-cream/70">Late Hours</p>
+                        <p class="text-sm font-semibold text-cream">1:00 PM – 2:00 AM</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amberGlow/20 flex items-center justify-center text-amberGlow flex-shrink-0">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-cream/70">Quality Food</p>
+                        <p class="text-sm font-semibold text-cream">Scratch-Made Sauces</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Text Content -->
+            <div class="lg:col-span-6 space-y-6">
+                <div class="inline-flex items-center gap-2 text-caramel font-semibold text-sm tracking-wider uppercase bg-cream/80 px-3.5 py-1.5 rounded-full">
+                    <i class="fa-solid fa-heart text-xs"></i> About Mamush Cafe
+                </div>
+                <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast leading-tight">
+                    Your Favorite Homey & Boho Coffee Haven in Imus
+                </h2>
+                <p class="text-roast/80 text-base sm:text-lg leading-relaxed">
+                    Nestled in Buhay na Tubig, Imus, <span class="font-semibold text-roast">MAMUSH CAFE PH</span> was built with a single vision: to create a warm, relaxed space where comfort food, rich specialty coffee, and great conversations come together.
+                </p>
+                <p class="text-roast/80 text-base leading-relaxed">
+                    We take pride in our handcrafted menu—from secret sauces prepared fresh from scratch to signature pastas like our best-selling <span class="font-semibold text-caramel">Parmarosa</span>, mouthwatering gourmet burgers, and rich espresso creations. Whether you're working late on your laptop, hanging out with friends, or enjoying a night out with your furry pets, Mamush is your late-night safe space.
+                </p>
+
+                <!-- Key Features List -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                    <div class="flex items-start gap-3 p-3.5 bg-warmBg border border-amberGlow/20 rounded-xl shadow-sm">
+                        <i class="fa-solid fa-utensils text-caramel text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-roast text-sm">Made From Scratch</h4>
+                            <p class="text-xs text-roast/70">Gourmet sauces, pasta, and patties prepared with premium ingredients.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-3.5 bg-warmBg border border-amberGlow/20 rounded-xl shadow-sm">
+                        <i class="fa-solid fa-cloud-sun text-caramel text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-roast text-sm">Cozy Alfresco & Indoor</h4>
+                            <p class="text-xs text-roast/70">Warm aesthetic lighting, boho accents, and comfortable seating options.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex flex-wrap gap-4 items-center">
+                    <a href="#menu" class="bg-roast hover:bg-caramel text-cream font-medium px-6 py-3 rounded-xl transition-colors shadow-md inline-flex items-center gap-2">
+                        <span>See Menu Highlights</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <div class="flex items-center gap-3 text-sm text-roast/80">
+                        <i class="fa-solid fa-location-dot text-caramel"></i>
+                        <span>Buhay na Tubig, Imus, Cavite</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Visual Gallery Grid -->
+            <div class="lg:col-span-6 grid grid-cols-2 gap-4 relative">
+                <!-- Decorative Circle -->
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-cream rounded-full -z-10 blur-xl opacity-70"></div>
+                
+                <div class="space-y-4">
+                    <div class="overflow-hidden rounded-2xl shadow-lg border-2 border-amberGlow/20 group">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Cafe Interior Atmosphere" class="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bg-roast text-cream p-5 rounded-2xl shadow-md border border-amberGlow/30 text-center">
+                        <p class="font-playfair text-3xl font-bold text-amberGlow mb-1">100%</p>
+                        <p class="text-xs uppercase tracking-widest font-semibold text-cream/90">Pet-Friendly Space</p>
+                        <p class="text-xs text-cream/70 mt-1">Dogs and cats are warmly welcomed inside & out!</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4 pt-6 sm:pt-10">
+                    <div class="bg-cream p-5 rounded-2xl shadow-md border border-amberGlow/30 text-center">
+                        <p class="font-playfair text-3xl font-bold text-roast mb-1">2:00 AM</p>
+                        <p class="text-xs uppercase tracking-widest font-semibold text-caramel">Late Night Coffee Spot</p>
+                        <p class="text-xs text-roast/70 mt-1">Open daily from 1:00 PM for all your night cravings</p>
+                    </div>
+                    <div class="overflow-hidden rounded-2xl shadow-lg border-2 border-amberGlow/20 group">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=800" alt="Specialty Coffee Brew" class="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section id="menu" class="py-20 bg-cream/40 border-y border-amberGlow/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-caramel font-semibold text-sm uppercase tracking-widest bg-warmBg px-4 py-1.5 rounded-full border border-amberGlow/30">
+                    Handcrafted Menu
+                </span>
+                <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast mt-4 mb-4">
+                    Brewed with Passion, Served with Care
+                </h2>
+                <p class="text-roast/80 text-base sm:text-lg">
+                    Discover our house specialty coffee, creamy frappes, rich pastas, and gourmet burgers crafted daily.
+                </p>
+
+                <!-- Search Input -->
+                <div class="mt-6 max-w-md mx-auto relative">
+                    <input type="text" id="menuSearch" oninput="filterMenu()" placeholder="Search coffee, pasta, burgers, desserts..." class="w-full bg-warmBg border border-amberGlow/40 rounded-full px-5 py-3 pl-11 text-roast placeholder-roast/50 focus:outline-none focus:ring-2 focus:ring-caramel shadow-sm text-sm">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-caramel text-sm"></i>
+                </div>
+            </div>
+
+            <!-- Menu Category Tabs -->
+            <div class="flex items-center justify-center flex-wrap gap-2 sm:gap-3 mb-10" id="categoryTabs">
+                <button onclick="switchCategory('all')" class="tab-btn active px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 transition-all duration-200">
+                    ✨ All Items
+                </button>
+                <button onclick="switchCategory('coffee')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    ☕ Espresso & Coffee
+                </button>
+                <button onclick="switchCategory('coldbrew')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    🧊 Cold Brews & Frappes
+                </button>
+                <button onclick="switchCategory('pasta')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    🍝 Signature Pastas
+                </button>
+                <button onclick="switchCategory('burgers')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    🍔 Burgers & Sides
+                </button>
+                <button onclick="switchCategory('desserts')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    🍰 Desserts & Sweets
+                </button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="menuGrid">
+                <!-- Items populated dynamically via JS -->
+            </div>
+
+            <!-- No results banner -->
+            <div id="noResults" class="hidden text-center py-12">
+                <i class="fa-solid fa-utensils text-4xl text-caramel/50 mb-3 block"></i>
+                <p class="text-roast text-lg font-medium">No menu items found</p>
+                <p class="text-roast/60 text-sm">Try searching for something else or switch categories.</p>
+            </div>
+
+            <!-- Note Footer -->
+            <div class="mt-12 text-center text-xs text-roast/70 border-t border-amberGlow/20 pt-6">
+                💡 <span class="font-semibold">Food Allergy Note:</span> Please inform our barista/staff of any dietary preferences or allergies when ordering. Prices are subject to slight seasonal variations.
+            </div>
+        </div>
+    </section>
+
+    <!-- Loyalty Card Section -->
+    <section id="loyalty" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="inline-flex items-center gap-2 text-caramel font-semibold text-sm uppercase tracking-widest bg-cream px-4 py-1.5 rounded-full border border-amberGlow/30">
+                    <i class="fa-solid fa-stamp"></i> Mamush Rewards
+                </span>
+                <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast mt-4 mb-3">A Little More with Every Visit</h2>
+                <p class="text-roast/75 text-sm sm:text-base">Collect 12 stamps. Get 50% off on your 6th visit and a free visit on your 12th.</p>
+            </div>
+
+            <div class="bg-roast text-cream rounded-3xl p-6 sm:p-10 shadow-xl border border-amberGlow/30">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+                    <div>
+                        <p class="text-amberGlow text-xs uppercase tracking-[0.2em] font-bold">MAMUSH CAFE PH</p>
+                        <h3 class="font-playfair text-2xl font-bold text-softCream mt-1">Your Loyalty Card</h3>
+                    </div>
+                    <div class="bg-espresso/70 rounded-2xl px-5 py-3 border border-amberGlow/20 text-center sm:text-right">
+                        <p class="text-amberGlow text-xs font-semibold uppercase tracking-wider">Stamps collected</p>
+                        <p class="font-playfair text-2xl font-bold text-softCream"><span id="loyaltyCount">0</span><span class="text-cream/60 text-base"> / 12</span></p>
+                    </div>
+                </div>
+
+                <div id="loyaltyStamps" class="grid grid-cols-4 sm:grid-cols-6 gap-3 sm:gap-4 mb-8" aria-label="Loyalty card stamps"></div>
+
+                <div class="grid sm:grid-cols-2 gap-3 mb-6">
+                    <div class="rounded-2xl border border-amberGlow/30 bg-espresso/60 p-4 flex items-center gap-3">
+                        <span class="w-11 h-11 rounded-full bg-amberGlow text-espresso flex items-center justify-center font-bold">6</span>
+                        <div>
+                            <p class="font-bold text-softCream">50% off</p>
+                            <p class="text-xs text-cream/70">On your 6th visit</p>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl border border-amberGlow/30 bg-espresso/60 p-4 flex items-center gap-3">
+                        <span class="w-11 h-11 rounded-full bg-amberGlow text-espresso flex items-center justify-center font-bold">12</span>
+                        <div>
+                            <p class="font-bold text-softCream">Free visit</p>
+                            <p class="text-xs text-cream/70">On your 12th visit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p id="loyaltyMessage" class="min-h-6 text-center text-amberGlow font-semibold text-sm mb-4" role="status" aria-live="polite"></p>
+                <button id="loyaltyStampButton" type="button" onclick="recordLoyaltyPurchase()" class="w-full bg-amberGlow hover:bg-accentGold text-espresso font-bold px-6 py-4 rounded-xl transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                    <i class="fa-solid fa-stamp"></i> Record completed purchase
+                </button>
+                <p class="text-center text-xs text-cream/60 mt-4">Staff: check the offer before payment, then record one stamp after each completed purchase. Progress is saved only in this browser.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Mamush / Features Grid -->
+    <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <div class="flex items-center justify-center gap-3 mb-3">
+                <span class="text-caramel font-semibold text-sm uppercase tracking-widest bg-cream px-4 py-1.5 rounded-full border border-amberGlow/30">
+                    The Mamush Experience
+                </span>
+                <button onclick="openModal('iconCustomizerModal')" class="bg-roast hover:bg-caramel text-cream text-xs font-semibold px-3 py-1.5 rounded-full transition-all flex items-center gap-1.5 shadow-sm border border-amberGlow/30">
+                    <i data-lucide="settings" class="w-3.5 h-3.5"></i> Custom Icons
+                </button>
+            </div>
+            <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast mt-4 mb-4">
+                Why Imus Locals Love Coming Back
+            </h2>
+            <p class="text-roast/80 text-base sm:text-lg">
+                More than just a coffee shop—it's your cozy neighborhood hangout designed for work, comfort food, and warm memories.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="whyMamushGrid">
+            <!-- Feature 1 -->
+            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-pet">
+                <div>
+                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-pet">
+                        <!-- Customizable Icon Slot -->
+                        <i data-lucide="dog"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">100% Pet Friendly</h3>
+                    <p class="text-roast/75 text-sm leading-relaxed mb-4">
+                        Bring your fur babies along! We welcome dogs and pets both in our cozy indoor seats and our comfortable outdoor alfresco setup.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-caramel flex items-center gap-1">
+                    <span>Indoor & Alfresco Dining</span> <i class="fa-solid fa-paw"></i>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-night">
+                <div>
+                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-night">
+                        <!-- Customizable Icon Slot -->
+                        <i data-lucide="moon"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Late-Night Cravings</h3>
+                    <p class="text-roast/75 text-sm leading-relaxed mb-4">
+                        Open daily until <span class="font-bold text-roast">2:00 AM</span>. Perfect for late-night coffee runs, study sessions, after-work dinners, or midnight burger cravings.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-caramel flex items-center gap-1">
+                    <span>Open 1:00 PM – 2:00 AM Daily</span> <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-work">
+                <div>
+                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-work">
+                        <!-- Customizable Icon Slot -->
+                        <i data-lucide="laptop"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Work & Study Friendly</h3>
+                    <p class="text-roast/75 text-sm leading-relaxed mb-4">
+                        Equipped with accessible power outlets/sockets, comfortable tables, and relaxing background music to keep you focused and productive.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-caramel flex items-center gap-1">
+                    <span>Power Outlets & Chill Vibes</span> <i class="fa-solid fa-laptop"></i>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-food">
+                <div>
+                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-food">
+                        <!-- Customizable Icon Slot -->
+                        <i data-lucide="utensils"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Made From Scratch</h3>
+                    <p class="text-roast/75 text-sm leading-relaxed mb-4">
+                        We don't do shortcuts. Our signature sauces, burger patties, and pastas are prepared fresh with rich, high-quality ingredients.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-caramel flex items-center gap-1">
+                    <span>Handcrafted Flavor Excellence</span> <i class="fa-solid fa-utensils"></i>
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-pay">
+                <div>
+                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-pay">
+                        <!-- Customizable Icon Slot -->
+                        <i data-lucide="credit-card"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Flexible Payments</h3>
+                    <p class="text-roast/75 text-sm leading-relaxed mb-4">
+                        Pay conveniently using Cash, GCash cashless transfers, or Credit/Debit Cards for a hassle-free dining experience.
+                    </p>
+                </div>
+                <div class="text-xs font-semibold text-caramel flex items-center gap-1">
+                    <span>Cash, GCash & Cards Accepted</span> <i class="fa-solid fa-credit-card"></i>
+                </div>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="bg-roast text-cream p-8 rounded-3xl border border-amberGlow/30 shadow-xl flex flex-col justify-between" id="card-loc">
+                <div>
+                    <div class="icon-box icon-box-accent mb-6 font-bold" id="icon-slot-loc">
+                        <!-- Customizable Icon Slot -->
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold text-softCream mb-3">Convenient Imus Spot</h3>
+                    <p class="text-cream/80 text-sm leading-relaxed mb-4">
+                        Located at Camella Barcelona Homes Phase 3 in Buhay na Tubig, Imus. Easy to locate with accessible parking space.
+                    </p>
+                </div>
+                <a href="#location" class="inline-flex items-center gap-2 text-amberGlow font-semibold text-sm hover:underline">
+                    <span>Get Directions</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews / Testimonials Section -->
+    <section id="reviews" class="py-20 bg-roast text-cream relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 mb-12">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-amberGlow font-semibold text-xs tracking-widest uppercase bg-espresso/80 px-3.5 py-1.5 rounded-full border border-amberGlow/20 mb-3">
+                        <i class="fa-solid fa-star text-amber-400"></i> Google Reviews Highlight
+                    </div>
+                    <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-softCream">
+                        What Our Guests Say
+                    </h2>
+                </div>
+
+                <!-- Rating Stats Pill -->
+                <div class="bg-espresso/90 border border-amberGlow/30 p-6 rounded-2xl flex items-center gap-6 shadow-2xl">
+                    <div class="text-center">
+                        <p class="font-playfair text-5xl font-bold text-amberGlow">4.9</p>
+                        <div class="flex text-amber-400 text-xs mt-1 gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="border-l border-amberGlow/20 pl-6 text-xs text-cream/80">
+                        <p class="font-bold text-base text-cream">237+ Reviews</p>
+                        <p>Verified Local Visitors & Coffee Enthusiasts</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="glass-dark p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-cream/90 text-sm leading-relaxed italic mb-6">
+                            "The Parmarosa pasta genuinely exceeds expectations! Red and white sauce blend is so creamy, and the crispy chicken on top is perfection. Hands down my favorite late night spot in Imus."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-amberGlow/20">
+                        <div class="w-10 h-10 rounded-full bg-amberGlow/30 flex items-center justify-center font-bold text-amberGlow">
+                            M
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-cream">Maria Santos</p>
+                            <p class="text-xs text-cream/60">Local Guide • Imus Cavite</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-dark p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-cream/90 text-sm leading-relaxed italic mb-6">
+                            "Burger, fries & coffee are lit – 10/10! The cheesiest burger was super juicy and the chili con carne fries hit the spot. Loved that my golden retriever could sit inside with us comfortably."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-amberGlow/20">
+                        <div class="w-10 h-10 rounded-full bg-amberGlow/30 flex items-center justify-center font-bold text-amberGlow">
+                            J
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-cream">Joshua De Cruz</p>
+                            <p class="text-xs text-cream/60">Pet Owner & Coffee Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-dark p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-cream/90 text-sm leading-relaxed italic mb-6">
+                            "Super cozy boho vibes and friendly staff. Plugs everywhere for laptop work while sipping Spanish Latte. Opened until 2AM is a total game changer for freelancers like me!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-amberGlow/20">
+                        <div class="w-10 h-10 rounded-full bg-amberGlow/30 flex items-center justify-center font-bold text-amberGlow">
+                            A
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-cream">Angela Reyes</p>
+                            <p class="text-xs text-cream/60">Remote Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location, Hours & Contact Section -->
+    <section id="location" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+            <!-- Information Card -->
+            <div class="lg:col-span-5 space-y-6">
+                <div>
+                    <span class="text-caramel font-semibold text-xs tracking-widest uppercase bg-cream px-3.5 py-1.5 rounded-full border border-amberGlow/30">
+                        Visit & Connect
+                    </span>
+                    <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-roast mt-4 mb-3">
+                        Drop By or Order Ahead
+                    </h2>
+                    <p class="text-roast/80 text-sm leading-relaxed">
+                        We are located in Buhay na Tubig, Imus, Cavite. Feel free to message or call us for reservations, takeout orders, or delivery inquiries.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Address Item -->
+                    <div class="flex items-start gap-4 p-4 bg-warmBg border border-amberGlow/20 rounded-2xl shadow-sm">
+                        <div class="w-10 h-10 rounded-xl bg-roast text-cream flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-roast text-sm">Location Address</h4>
+                            <p class="text-xs text-roast/80 mt-1">Lot 1A 1Blk 1 Camella Barcelona Homes Ph 3, Buhay na Tubig, Imus, Cavite</p>
+                            <a href="https://www.google.com/maps/place/MAMUSH+CAFE+PH/@14.4079279,120.9520742,17z/data=!4m14!1m7!3m6!1s0x3397d336a4d5780b:0xb11b618932b597b0!2sMAMUSH+CAFE+PH!8m2!3d14.4079874!4d120.9547104!16s%2Fg%2F11v42bk8rn!3m5!1s0x3397d336a4d5780b:0xb11b618932b597b0!8m2!3d14.4079874!4d120.9547104!16s%2Fg%2F11v42bk8rn" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-caramel font-semibold mt-2 hover:underline">
+                                <span>Open Google Maps Navigation</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hours Item -->
+                    <div class="flex items-start gap-4 p-4 bg-warmBg border border-amberGlow/20 rounded-2xl shadow-sm">
+                        <div class="w-10 h-10 rounded-xl bg-roast text-cream flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-roast text-sm">Operating Hours</h4>
+                            <p class="text-xs text-roast/80 mt-1"><span class="font-semibold text-caramel">Open Daily:</span> 1:00 PM – 2:00 AM (Midnight/Late Night Spot)</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact & Payment Item -->
+                    <div class="flex items-start gap-4 p-4 bg-warmBg border border-amberGlow/20 rounded-2xl shadow-sm">
+                        <div class="w-10 h-10 rounded-xl bg-roast text-cream flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-roast text-sm">Contact Number & Payment</h4>
+                            <p class="text-xs text-roast/80 mt-1">Phone: <a href="tel:+639669583030" class="font-semibold text-roast hover:underline">+63 966 958 3030</a></p>
+                            <div class="flex items-center gap-2 mt-2">
+                                <span class="px-2 py-0.5 bg-cream text-[10px] font-bold text-roast rounded">Cash</span>
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-800 text-[10px] font-bold rounded">GCash</span>
+                                <span class="px-2 py-0.5 bg-purple-100 text-purple-800 text-[10px] font-bold rounded">Debit/Credit Cards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="openModal('reserveModal')" class="w-full bg-roast hover:bg-caramel text-cream font-medium py-3.5 rounded-xl shadow-md transition-colors flex items-center justify-center gap-2 text-sm">
+                    <i class="fa-solid fa-calendar-check text-amberGlow"></i> Quick Reservation / Order Inquiry
+                </button>
+            </div>
+
+            <!-- Map Placeholder / Google Maps Embed Container -->
+            <div class="lg:col-span-7 bg-cream/50 p-3 rounded-3xl border border-amberGlow/30 shadow-md h-full min-h-[420px] flex flex-col">
+                <div class="relative w-full h-full min-h-[400px] rounded-2xl overflow-hidden shadow-inner border border-amberGlow/20 bg-warmBg">
+                    <!-- Google Map Iframe for Mamush Cafe -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.8198758836526!2d120.9520742!3d14.4079279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d336a4d5780b%3A0xb11b618932b597b0!2sMAMUSH%20CAFE%20PH!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph" 
+                        class="w-full h-full min-h-[400px] border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-espresso text-cream border-t border-amberGlow/20 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-cream/10">
+                
+                <!-- Brand Info -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amberGlow text-roast flex items-center justify-center font-serif text-xl font-bold">
+                            M
+                        </div>
+                        <span class="font-playfair text-2xl font-bold text-softCream tracking-wide">MAMUSH CAFE PH</span>
+                    </div>
+                    <p class="text-cream/70 text-sm max-w-sm leading-relaxed">
+                        Handcrafted flavors, specialty coffee, and comforting pasta served in a cozy, pet-friendly late-night spot in Imus, Cavite.
+                    </p>
+                    <div class="flex items-center gap-3 text-amberGlow pt-2">
+                        <a href="https://www.facebook.com" target="_blank" class="w-9 h-9 rounded-full bg-roast hover:bg-caramel flex items-center justify-center text-cream transition-colors">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-roast hover:bg-caramel flex items-center justify-center text-cream transition-colors">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                        <a href="https://www.tiktok.com" target="_blank" class="w-9 h-9 rounded-full bg-roast hover:bg-caramel flex items-center justify-center text-cream transition-colors">
+                            <i class="fa-brands fa-tiktok text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Navigation -->
+                <div>
+                    <h4 class="font-playfair font-bold text-amberGlow text-base mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm text-cream/80">
+                        <li><a href="#about" class="hover:text-amberGlow transition-colors">About Mamush</a></li>
+                        <li><a href="#menu" class="hover:text-amberGlow transition-colors">Full Food & Drinks Menu</a></li>
+                        <li><a href="#features" class="hover:text-amberGlow transition-colors">Pet & Work Amenities</a></li>
+                        <li><a href="#reviews" class="hover:text-amberGlow transition-colors">Customer Reviews</a></li>
+                        <li><a href="#location" class="hover:text-amberGlow transition-colors">Location & Hours</a></li>
+                    </ul>
+                </div>
+
+                <!-- Hours & Info -->
+                <div>
+                    <h4 class="font-playfair font-bold text-amberGlow text-base mb-4">Store Hours</h4>
+                    <p class="text-sm font-semibold text-cream">Open Daily</p>
+                    <p class="text-xs text-cream/70 mb-3">1:00 PM – 2:00 AM</p>
+                    <p class="text-xs text-cream/60 leading-relaxed">
+                        Lot 1A 1Blk 1 Camella Barcelona Homes Ph 3, Buhay na Tubig, Imus, Cavite
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-cream/50 gap-4">
+                <p>© 2026 MAMUSH CAFE PH. All Rights Reserved. Buhay na Tubig, Imus, Cavite.</p>
+                <p>Designed for Late-Night Coffee Lovers & Pet Parents 🐾</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reservation / Inquiry Modal -->
+    <div id="reserveModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-warmBg w-full max-w-lg rounded-3xl border border-amberGlow/30 p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <!-- Close Button -->
+            <button onclick="closeModal('reserveModal')" class="absolute top-5 right-5 text-roast/60 hover:text-roast w-8 h-8 rounded-full bg-cream/60 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="mb-6">
+                <span class="text-caramel font-semibold text-xs tracking-widest uppercase bg-cream px-3 py-1 rounded-full">
+                    Table Reservation / Order Inquiry
+                </span>
+                <h3 class="font-playfair text-2xl font-bold text-roast mt-2">Book Your Visit at Mamush</h3>
+                <p class="text-xs text-roast/70 mt-1">Send us your details and we will confirm your table or pickup order!</p>
+            </div>
+
+            <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-roast mb-1">Full Name *</label>
+                    <input type="text" required placeholder="e.g. Juan Dela Cruz" class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-roast mb-1">Mobile Number *</label>
+                        <input type="tel" required placeholder="0966 958 3030" class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-roast mb-1">Inquiry Type</label>
+                        <select class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                            <option>Table Reservation</option>
+                            <option>Takeout / Advance Order</option>
+                            <option>Event Inquiry / Group Seating</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-roast mb-1">Date</label>
+                        <input type="date" required class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-roast mb-1">Estimated Time</label>
+                        <input type="time" required class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-roast mb-1">Number of Guests</label>
+                        <input type="number" min="1" max="20" value="2" class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-roast mb-1">Bringing Pets? 🐾</label>
+                        <select class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                            <option>No</option>
+                            <option>Yes (Dog)</option>
+                            <option>Yes (Cat)</option>
+                            <option>Yes (Multiple Pets)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-roast mb-1">Special Requests or Initial Food Orders</label>
+                    <textarea rows="3" placeholder="e.g. Prefer alfresco table near outlet, ordering Parmarosa pasta & Spanish Latte..." class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-roast hover:bg-caramel text-cream font-bold py-3.5 rounded-xl shadow-lg transition-all text-sm mt-2">
+                    Submit Inquiry
+                </button>
+            </form>
+            
+            <div id="modalSuccess" class="hidden text-center py-8 space-y-3">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mx-auto">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4 class="font-playfair text-2xl font-bold text-roast">Inquiry Sent Successfully!</h4>
+                <p class="text-xs text-roast/80 max-w-xs mx-auto">Thank you for reaching out to Mamush Cafe. Our team will verify availability and confirm via SMS or call shortly!</p>
+                <button onclick="closeModal('reserveModal')" class="bg-roast text-cream px-6 py-2 rounded-xl text-xs font-semibold">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item Detail Preview Modal -->
+    <div id="itemDetailModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-warmBg w-full max-w-md rounded-3xl border border-amberGlow/30 p-6 shadow-2xl relative">
+            <button onclick="closeModal('itemDetailModal')" class="absolute top-4 right-4 text-roast/60 hover:text-roast w-8 h-8 rounded-full bg-cream/60 flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <img id="modalItemImg" src="" alt="Menu Item" class="w-full h-48 object-cover rounded-2xl mb-4 border border-amberGlow/20">
+            <span id="modalItemCategory" class="text-xs font-bold text-caramel uppercase tracking-widest bg-cream px-3 py-1 rounded-full">Category</span>
+            <h3 id="modalItemTitle" class="font-playfair text-2xl font-bold text-roast mt-2">Item Name</h3>
+            <p id="modalItemPrice" class="text-lg font-bold text-caramel my-1">₱0.00</p>
+            <p id="modalItemDesc" class="text-sm text-roast/80 leading-relaxed my-3">Description...</p>
+
+            <div class="pt-4 border-t border-amberGlow/20 flex gap-3">
+                <button onclick="closeModal('itemDetailModal'); openModal('reserveModal');" class="w-full bg-roast text-cream py-3 rounded-xl font-bold text-xs shadow hover:bg-caramel transition-colors">
+                    Order / Reserve This Item
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Mamush Icon Customizer Modal -->
+    <div id="iconCustomizerModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-warmBg w-full max-w-2xl rounded-3xl border border-amberGlow/30 p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal('iconCustomizerModal')" class="absolute top-5 right-5 text-roast/60 hover:text-roast w-8 h-8 rounded-full bg-cream/60 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="mb-6">
+                <span class="text-caramel font-semibold text-xs tracking-widest uppercase bg-cream px-3 py-1 rounded-full border border-amberGlow/20">
+                    Live Icon Customizer
+                </span>
+                <h3 class="font-playfair text-2xl font-bold text-roast mt-2">Customize "Why Mamush" Icons</h3>
+                <p class="text-xs text-roast/70 mt-1">Select a card to customize its icon. You can choose from presets, enter a Lucide icon name, paste an image URL, or raw SVG code.</p>
+            </div>
+
+            <!-- Card Selector Dropdown -->
+            <div class="mb-5">
+                <label class="block text-xs font-bold text-roast mb-1">Target Feature Card</label>
+                <select id="customizerCardSelect" onchange="loadCardIconConfig()" class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel font-medium">
+                    <option value="pet">1. 100% Pet Friendly</option>
+                    <option value="night">2. Late-Night Cravings</option>
+                    <option value="work">3. Work & Study Friendly</option>
+                    <option value="food">4. Made From Scratch</option>
+                    <option value="pay">5. Flexible Payments</option>
+                    <option value="loc">6. Convenient Imus Spot</option>
+                </select>
+            </div>
+
+            <!-- Customization Type Tabs -->
+            <div class="flex gap-2 mb-4">
+                <button onclick="switchCustomType('preset')" id="tabTypePreset" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-roast text-cream border border-roast transition-all">Preset Icons</button>
+                <button onclick="switchCustomType('lucide')" id="tabTypeLucide" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-warmBg text-roast border border-roast/20 transition-all">Lucide Name</button>
+                <button onclick="switchCustomType('image')" id="tabTypeImage" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-warmBg text-roast border border-roast/20 transition-all">Image URL</button>
+                <button onclick="switchCustomType('svg')" id="tabTypeSvg" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-warmBg text-roast border border-roast/20 transition-all">Raw SVG</button>
+            </div>
+
+            <!-- Panel 1: Presets -->
+            <div id="panelPreset" class="space-y-3">
+                <label class="block text-xs font-bold text-roast">Choose Preset Icon</label>
+                <div class="grid grid-cols-4 sm:grid-cols-6 gap-3">
+                    <button onclick="applyPresetIcon('dog')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="dog" class="w-5 h-5"></i>Dog</button>
+                    <button onclick="applyPresetIcon('cat')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="cat" class="w-5 h-5"></i>Cat</button>
+                    <button onclick="applyPresetIcon('coffee')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="coffee" class="w-5 h-5"></i>Coffee</button>
+                    <button onclick="applyPresetIcon('moon')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="moon" class="w-5 h-5"></i>Moon</button>
+                    <button onclick="applyPresetIcon('laptop')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="laptop" class="w-5 h-5"></i>Laptop</button>
+                    <button onclick="applyPresetIcon('wifi')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="wifi" class="w-5 h-5"></i>Wifi</button>
+                    <button onclick="applyPresetIcon('utensils')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="utensils" class="w-5 h-5"></i>Food</button>
+                    <button onclick="applyPresetIcon('credit-card')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="credit-card" class="w-5 h-5"></i>Card</button>
+                    <button onclick="applyPresetIcon('map-pin')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="map-pin" class="w-5 h-5"></i>Location</button>
+                    <button onclick="applyPresetIcon('heart')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="heart" class="w-5 h-5"></i>Heart</button>
+                    <button onclick="applyPresetIcon('sparkles')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="sparkles" class="w-5 h-5"></i>Sparkles</button>
+                    <button onclick="applyPresetIcon('clock')" class="p-3 bg-white border border-amberGlow/20 rounded-xl hover:bg-cream flex flex-col items-center gap-1.5 text-roast text-xs font-medium"><i data-lucide="clock" class="w-5 h-5"></i>Clock</button>
+                </div>
+            </div>
+
+            <!-- Panel 2: Lucide Icon Name -->
+            <div id="panelLucide" class="hidden space-y-3">
+                <label class="block text-xs font-bold text-roast">Lucide Icon Name</label>
+                <div class="flex gap-2">
+                    <input type="text" id="lucideNameInput" placeholder="e.g. smile, shield, award, flame" class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                    <button onclick="applyLucideIcon()" class="bg-roast hover:bg-caramel text-cream text-xs font-bold px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">Apply</button>
+                </div>
+            </div>
+
+            <!-- Panel 3: Image URL -->
+            <div id="panelImage" class="hidden space-y-3">
+                <label class="block text-xs font-bold text-roast">Custom Image / PNG / SVG Icon URL</label>
+                <div class="flex gap-2">
+                    <input type="url" id="imgUrlInput" placeholder="https://example.com/icon.png" class="w-full bg-white border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                    <button onclick="applyImageIcon()" class="bg-roast hover:bg-caramel text-cream text-xs font-bold px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">Apply Image</button>
+                </div>
+            </div>
+
+            <!-- Panel 4: Raw SVG -->
+            <div id="panelSvg" class="hidden space-y-3">
+                <label class="block text-xs font-bold text-roast">Paste Raw SVG Code</label>
+                <textarea id="svgCodeInput" rows="4" placeholder='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>' class="w-full bg-white border border-amberGlow/30 rounded-xl p-3 text-xs font-mono text-roast focus:outline-none focus:ring-2 focus:ring-caramel"></textarea>
+                <button onclick="applySvgCodeIcon()" class="bg-roast hover:bg-caramel text-cream text-xs font-bold px-5 py-2.5 rounded-xl transition-colors w-full">Apply Custom SVG</button>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-amberGlow/20 flex items-center justify-between">
+                <button onclick="resetDefaultIcons()" class="text-xs font-semibold text-roast/70 hover:text-roast underline">Reset All to Defaults</button>
+                <button onclick="closeModal('iconCustomizerModal')" class="bg-roast text-cream px-6 py-2 rounded-xl text-xs font-bold">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Data and Logic -->
+    <script>
+        // Menu Items Database
+        const menuData = [
+            // Espresso & Coffee
+            {
+                id: 1,
+                category: 'coffee',
+                categoryLabel: 'Espresso & Coffee',
+                name: 'Spanish Latte',
+                price: '₱145',
+                desc: 'Our crowd favorite! Rich double espresso combined with condensed milk and steamed milk for a perfectly sweet espresso balance.',
+                img: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=600',
+                badge: '⭐ Bestseller'
+            },
+            {
+                id: 2,
+                category: 'coffee',
+                categoryLabel: 'Espresso & Coffee',
+                name: 'Sea Salt Latte',
+                price: '₱155',
+                desc: 'Freshly brewed espresso topped with handcrafted sea salt cream foam. Sweet, savory, and rich.',
+                img: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=600',
+                badge: 'Chef Favorite'
+            },
+            {
+                id: 3,
+                category: 'coffee',
+                categoryLabel: 'Espresso & Coffee',
+                name: 'White Chocolate Mocha',
+                price: '₱150',
+                desc: 'Creamy white chocolate blend infused with bold dark roast espresso and topped with velvety milk foam.',
+                img: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=80&w=600',
+                badge: ''
+            },
+            {
+                id: 4,
+                category: 'coffee',
+                categoryLabel: 'Espresso & Coffee',
+                name: 'Classic Espresso Single/Double',
+                price: '₱90',
+                desc: 'Pure, concentrated coffee extraction using locally roasted high-altitude beans.',
+                img: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&q=80&w=600',
+                badge: ''
+            },
+
+            // Cold Brews & Frappes
+            {
+                id: 5,
+                category: 'coldbrew',
+                categoryLabel: 'Cold Brews & Frappes',
+                name: 'Ube Cream Frappe',
+                price: '₱165',
+                desc: 'Rich Filipino ube halaya blended with ice, topped with whipped cream and ube drizzle.',
+                img: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&q=80&w=600',
+                badge: '🌟 Local Special'
+            },
+            {
+                id: 6,
+                category: 'coldbrew',
+                categoryLabel: 'Cold Brews & Frappes',
+                name: 'Mocha Chip Frappe',
+                price: '₱160',
+                desc: 'Blended espresso with dark chocolate chips, premium cocoa, and smooth whipped cream.',
+                img: 'https://images.unsplash.com/photo-1553787499-6f9133860278?auto=format&fit=crop&q=80&w=600',
+                badge: 'Popular'
+            },
+            {
+                id: 7,
+                category: 'coldbrew',
+                categoryLabel: 'Cold Brews & Frappes',
+                name: 'Handcrafted Iced Coffee',
+                price: '₱130',
+                desc: 'Slow-steeped 16-hour cold brew over ice, smooth with low acidity.',
+                img: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=600',
+                badge: ''
+            },
+
+            // Signature Pastas
+            {
+                id: 8,
+                category: 'pasta',
+                categoryLabel: 'Signature Pastas',
+                name: 'Parmarosa Pasta',
+                price: '₱245',
+                desc: 'Mamush House Special! A secret blend of rich tomato red and velvety white cream sauce, served with crispy fried chicken fillet & garlic bread.',
+                img: 'https://images.unsplash.com/photo-1621996346565-e3def616403c?auto=format&fit=crop&q=80&w=600',
+                badge: '🔥 Must Try'
+            },
+            {
+                id: 9,
+                category: 'pasta',
+                categoryLabel: 'Signature Pastas',
+                name: 'Pesto Pasta w/ Handpicked Basil',
+                price: '₱220',
+                desc: 'Freshly pounded basil pesto sauce, olive oil, garlic, parmesan cheese, and toasted nuts over al dente pasta.',
+                img: 'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&q=80&w=600',
+                badge: 'Fresh'
+            },
+            {
+                id: 10,
+                category: 'pasta',
+                categoryLabel: 'Signature Pastas',
+                name: 'Classic Creamy Carbonara',
+                price: '₱210',
+                desc: 'Traditional egg-yolk and cream sauce enriched with crispy bacon bits, garlic, and fresh parmesan cheese.',
+                img: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&q=80&w=600',
+                badge: ''
+            },
+
+            // Gourmet Burgers & Sides
+            {
+                id: 11,
+                category: 'burgers',
+                categoryLabel: 'Burgers & Sides',
+                name: 'The Cheesiest Burger',
+                price: '₱230',
+                desc: 'Handcrafted beef patty, melted cheddar slice, house-made cheese sauce drip, lettuce, and tomatoes on a toasted bun.',
+                img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=600',
+                badge: '⭐ Customer Favorite'
+            },
+            {
+                id: 12,
+                category: 'burgers',
+                categoryLabel: 'Burgers & Sides',
+                name: 'Chili Con Carne Fries',
+                price: '₱185',
+                desc: 'Crispy thick-cut fries topped with hearty simmered beef chili con carne and warm cheese sauce.',
+                img: 'https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&q=80&w=600',
+                badge: 'Great to Share'
+            },
+            {
+                id: 13,
+                category: 'burgers',
+                categoryLabel: 'Burgers & Sides',
+                name: 'Truffle Parmesan Fries',
+                price: '₱175',
+                desc: 'Golden fries tossed in aromatic white truffle oil, grated parmesan, and dried parsley.',
+                img: 'https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&q=80&w=600',
+                badge: ''
+            },
+            {
+                id: 14,
+                category: 'burgers',
+                categoryLabel: 'Burgers & Sides',
+                name: 'Loaded Beef Nachos',
+                price: '₱210',
+                desc: 'Crispy corn tortilla chips piled high with seasoned ground beef, jalapeños, tomatoes, and liquid cheese.',
+                img: 'https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&q=80&w=600',
+                badge: ''
+            },
+            {
+                id: 15,
+                category: 'burgers',
+                categoryLabel: 'Burgers & Sides',
+                name: 'Mamush Clubhouse Sandwich',
+                price: '₱195',
+                desc: 'Triple-decker toasted bread filled with roasted chicken slices, bacon, ham, egg, lettuce, and mayo fries side.',
+                img: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&q=80&w=600',
+                badge: ''
+            },
+
+            // Desserts & Sweets
+            {
+                id: 16,
+                category: 'desserts',
+                categoryLabel: 'Desserts & Sweets',
+                name: 'House Tiramisu Slice',
+                price: '₱150',
+                desc: 'Espresso-soaked ladyfingers layered with fluffy mascarpone cream and dusted with dark cocoa powder.',
+                img: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&q=80&w=600',
+                badge: 'Sweet Pairing'
+            },
+            {
+                id: 17,
+                category: 'desserts',
+                categoryLabel: 'Desserts & Sweets',
+                name: 'Fresh Daily Pastries',
+                price: '₱95',
+                desc: 'Ask our barista for today\'s fresh bake (Croissants, Butter Cookies, Blueberry Muffins).',
+                img: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=600',
+                badge: 'Freshly Baked'
+            }
+        ];
+
+        let currentCategory = 'all';
+        let loyaltyPurchases = 0;
+        let loyaltyStorageReady = true;
+        const loyaltyStorageKey = 'mamushLoyaltyPurchases';
+
+        function renderLoyaltyCard(message = '') {
+            const stamps = document.getElementById('loyaltyStamps');
+            const count = loyaltyPurchases % 12 || (loyaltyPurchases > 0 ? 12 : 0);
+            document.getElementById('loyaltyCount').textContent = count;
+            stamps.innerHTML = '';
+
+            for (let stamp = 1; stamp <= 12; stamp += 1) {
+                const filled = stamp <= count;
+                const reward = stamp === 6 ? '50%' : stamp === 12 ? 'FREE' : '';
+                const stampElement = document.createElement('div');
+                stampElement.className = `aspect-square rounded-2xl border flex flex-col items-center justify-center gap-1 ${filled ? 'bg-amberGlow text-espresso border-amberGlow' : 'bg-espresso/60 text-cream/60 border-amberGlow/25'}`;
+                stampElement.setAttribute('aria-label', `Stamp ${stamp}${reward ? `, ${reward} reward` : ''}${filled ? ', collected' : ', not collected'}`);
+                stampElement.innerHTML = `<span class="text-[10px] font-bold uppercase">${reward || `Visit ${stamp}`}</span><i class="fa-solid ${filled ? 'fa-check' : 'fa-mug-hot'} text-lg"></i>`;
+                stamps.appendChild(stampElement);
+            }
+
+            const nextVisit = (loyaltyPurchases % 12) + 1;
+            const nextMessage = count === 12
+                ? 'Your next visit starts a new card'
+                : nextVisit === 6
+                ? 'Next visit reward: 50% off'
+                : nextVisit === 12
+                    ? 'Next visit reward: a free visit'
+                    : `Next reward at visit ${nextVisit <= 6 ? 6 : 12}`;
+            document.getElementById('loyaltyMessage').textContent = message ? `${message} ${nextMessage}.` : nextMessage;
+            document.getElementById('loyaltyStampButton').disabled = !loyaltyStorageReady;
+        }
+
+        function loadLoyaltyCard() {
+            try {
+                loyaltyPurchases = 0;
+                const savedPurchases = localStorage.getItem(loyaltyStorageKey);
+                if (savedPurchases !== null) {
+                    const parsedPurchases = Number(savedPurchases);
+                    if (!Number.isSafeInteger(parsedPurchases) || parsedPurchases < 0) {
+                        throw new Error('Saved loyalty card data is invalid.');
+                    }
+                    loyaltyPurchases = parsedPurchases;
+                }
+            } catch (error) {
+                loyaltyStorageReady = false;
+                renderLoyaltyCard('Unable to load the loyalty card. Please enable browser storage or contact staff.');
+                console.error('Could not load loyalty card:', error);
+                return;
+            }
+            renderLoyaltyCard();
+        }
+
+        function recordLoyaltyPurchase() {
+            if (!loyaltyStorageReady) return;
+
+            const nextPurchases = loyaltyPurchases + 1;
+            try {
+                localStorage.setItem(loyaltyStorageKey, String(nextPurchases));
+            } catch (error) {
+                loyaltyStorageReady = false;
+                renderLoyaltyCard('Unable to save this stamp. Please enable browser storage or contact staff.');
+                console.error('Could not save loyalty card:', error);
+                return;
+            }
+
+            loyaltyPurchases = nextPurchases;
+            const visit = ((nextPurchases - 1) % 12) + 1;
+            const confirmation = visit === 6
+                ? '6th visit recorded. 50% off reward recorded.'
+                : visit === 12
+                    ? '12th visit recorded. Free visit reward recorded!'
+                    : `Visit ${visit} recorded.`;
+            renderLoyaltyCard(confirmation);
+        }
+
+        // Render Menu Logic
+        function renderMenu() {
+            const grid = document.getElementById('menuGrid');
+            const noRes = document.getElementById('noResults');
+            const searchVal = document.getElementById('menuSearch').value.toLowerCase().trim();
+
+            grid.innerHTML = '';
+
+            const filtered = menuData.filter(item => {
+                const matchCategory = currentCategory === 'all' || item.category === currentCategory;
+                const matchSearch = item.name.toLowerCase().includes(searchVal) || 
+                                    item.desc.toLowerCase().includes(searchVal) ||
+                                    item.categoryLabel.toLowerCase().includes(searchVal);
+                return matchCategory && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                noRes.classList.remove('hidden');
+            } else {
+                noRes.classList.add('hidden');
+                filtered.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = "bg-warmBg rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between group";
+                    card.innerHTML = `
+                        <div>
+                            <div class="relative overflow-hidden h-48">
+                                <img src="${item.img}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                ${item.badge ? `<span class="absolute top-3 left-3 bg-roast/90 backdrop-blur-md text-amberGlow text-[10px] font-bold px-3 py-1 rounded-full border border-amberGlow/30 shadow">${item.badge}</span>` : ''}
+                            </div>
+                            <div class="p-5">
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="font-playfair font-bold text-lg text-roast leading-snug">${item.name}</h3>
+                                    <span class="font-bold text-caramel text-base whitespace-nowrap">${item.price}</span>
+                                </div>
+                                <p class="text-roast/75 text-xs leading-relaxed line-clamp-2">${item.desc}</p>
+                            </div>
+                        </div>
+                        <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-amberGlow/10">
+                            <span class="text-[10px] uppercase font-semibold text-roast/50">${item.categoryLabel}</span>
+                            <button onclick="previewItem(${item.id})" class="text-xs font-semibold text-roast hover:text-caramel flex items-center gap-1 transition-colors">
+                                <span>Details</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+        }
+
+        // Category Switching
+        function switchCategory(cat) {
+            currentCategory = cat;
+            const buttons = document.querySelectorAll('#categoryTabs .tab-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('onclick').includes(`'${cat}'`)) {
+                    btn.classList.add('active');
+                    btn.classList.remove('bg-warmBg', 'text-roast');
+                } else {
+                    btn.classList.remove('active');
+                    btn.classList.add('bg-warmBg', 'text-roast');
+                }
+            });
+            renderMenu();
+        }
+
+        function filterMenu() {
+            renderMenu();
+        }
+
+        // Preview Single Item Modal
+        function previewItem(id) {
+            const item = menuData.find(i => i.id === id);
+            if(!item) return;
+
+            document.getElementById('modalItemImg').src = item.img;
+            document.getElementById('modalItemTitle').innerText = item.name;
+            document.getElementById('modalItemPrice').innerText = item.price;
+            document.getElementById('modalItemCategory').innerText = item.categoryLabel;
+            document.getElementById('modalItemDesc').innerText = item.desc;
+
+            openModal('itemDetailModal');
+        }
+
+        // Modal Controls
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if(modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if(modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Handle Reservation Form Submit
+        function handleReservationSubmit(e) {
+            e.preventDefault();
+            document.getElementById('reservationForm').classList.add('hidden');
+            document.getElementById('modalSuccess').classList.remove('hidden');
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-xl';
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-xl';
+            }
+        }
+
+        /* --- Custom Icon Manager Logic --- */
+        const defaultIcons = {
+            pet: '<i data-lucide="dog"></i>',
+            night: '<i data-lucide="moon"></i>',
+            work: '<i data-lucide="laptop"></i>',
+            food: '<i data-lucide="utensils"></i>',
+            pay: '<i data-lucide="credit-card"></i>',
+            loc: '<i data-lucide="map-pin"></i>'
+        };
+
+        function switchCustomType(type) {
+            const panels = ['Preset', 'Lucide', 'Image', 'Svg'];
+            panels.forEach(p => {
+                const pEl = document.getElementById('panel' + p);
+                const tabEl = document.getElementById('tabType' + p);
+                if (p.toLowerCase() === type) {
+                    pEl.classList.remove('hidden');
+                    tabEl.classList.add('bg-roast', 'text-cream');
+                    tabEl.classList.remove('bg-warmBg', 'text-roast');
+                } else {
+                    pEl.classList.add('hidden');
+                    tabEl.classList.remove('bg-roast', 'text-cream');
+                    tabEl.classList.add('bg-warmBg', 'text-roast');
+                }
+            });
+        }
+
+        function updateSlotIcon(cardKey, iconHtml) {
+            const slot = document.getElementById('icon-slot-' + cardKey);
+            if(slot) {
+                slot.innerHTML = iconHtml;
+                if(window.lucide) {
+                    window.lucide.createIcons();
+                }
+            }
+        }
+
+        function applyPresetIcon(iconName) {
+            const cardKey = document.getElementById('customizerCardSelect').value;
+            updateSlotIcon(cardKey, `<i data-lucide="${iconName}"></i>`);
+        }
+
+        function applyLucideIcon() {
+            const cardKey = document.getElementById('customizerCardSelect').value;
+            const iconName = document.getElementById('lucideNameInput').value.trim();
+            if(iconName) {
+                updateSlotIcon(cardKey, `<i data-lucide="${iconName}"></i>`);
+            }
+        }
+
+        function applyImageIcon() {
+            const cardKey = document.getElementById('customizerCardSelect').value;
+            const imgUrl = document.getElementById('imgUrlInput').value.trim();
+            if(imgUrl) {
+                updateSlotIcon(cardKey, `<img src="${imgUrl}" class="icon-img" alt="Custom Icon" onerror="this.src='https://placehold.co/100x100/2C1810/FAEDCD?text=Icon'">`);
+            }
+        }
+
+        function applySvgCodeIcon() {
+            const cardKey = document.getElementById('customizerCardSelect').value;
+            const svgCode = document.getElementById('svgCodeInput').value.trim();
+            if(svgCode) {
+                updateSlotIcon(cardKey, svgCode);
+            }
+        }
+
+        function resetDefaultIcons() {
+            Object.keys(defaultIcons).forEach(key => {
+                updateSlotIcon(key, defaultIcons[key]);
+            });
+        }
+
+        function loadCardIconConfig() {
+            // Optional callback when switching card selection in modal
+        }
+
+        // Initialize Page
+        window.addEventListener('DOMContentLoaded', () => {
+            renderMenu();
+            loadLoyaltyCard();
+            if(window.lucide) {
+                window.lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>

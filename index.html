@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COFFEE AND BEYOND | Cozy Loft-Style Cafe in Dasmariñas, Cavite</title>
+    <title>A.T. OASIS COFFEE & TEA SHOP | Specialty Ethiopian Coffee & Teas in Phoenix</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome Icons -->
@@ -85,7 +85,7 @@
             box-shadow: 0 4px 14px rgba(44, 24, 16, 0.25);
         }
 
-        /* Configurable Icon Box Styles */
+        /* Custom Icon Box Styles */
         .icon-box {
             width: 3.5rem;
             height: 3.5rem;
@@ -111,10 +111,6 @@
             object-fit: cover;
             border-radius: 1rem;
         }
-        .icon-box-accent {
-            background-color: #D4A373;
-            color: #1A0C08;
-        }
     </style>
 </head>
 <body class="antialiased selection:bg-amberGlow selection:text-white">
@@ -122,7 +118,7 @@
     <!-- Top Announcement Bar -->
     <div class="bg-roast text-cream text-xs sm:text-sm py-2 px-4 text-center font-medium flex items-center justify-center gap-2 border-b border-amberGlow/20">
         <span class="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-        <span>Open Mon–Sat 11:00 AM – 11:00 PM | Sun 11:00 AM – 10:00 PM in Dasmariñas!</span>
+        <span>Open Daily 7:00 AM – 4:00 PM (Sun until 3:00 PM) in Phoenix, AZ!</span>
         <a href="#reservation" class="underline hover:text-amberGlow transition-colors hidden sm:inline ml-2">Book a Table →</a>
     </div>
 
@@ -132,11 +128,11 @@
             <!-- Brand Logo -->
             <a href="#" class="flex items-center gap-3 group">
                 <div class="w-11 h-11 rounded-full bg-roast text-cream flex items-center justify-center font-serif text-xl font-bold shadow-md group-hover:bg-caramel transition-colors border-2 border-amberGlow/50">
-                    C&B
+                    AT
                 </div>
                 <div>
-                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-roast block leading-none">COFFEE & BEYOND</span>
-                    <span class="text-[10px] tracking-[0.25em] font-semibold text-caramel uppercase block mt-1">LANGKAAN • DASMARIÑAS</span>
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-roast block leading-none">A.T. OASIS</span>
+                    <span class="text-[10px] tracking-[0.25em] font-semibold text-caramel uppercase block mt-1">COFFEE & TEA • PHOENIX</span>
                 </div>
             </a>
 
@@ -145,16 +141,16 @@
                 <a href="#about" class="hover:text-caramel transition-colors">About Us</a>
                 <a href="#menu" class="hover:text-caramel transition-colors">Our Menu</a>
                 <a href="#loyalty" class="hover:text-caramel transition-colors">Loyalty Card</a>
-                <a href="#features" class="hover:text-caramel transition-colors">Why C&B</a>
+                <a href="#features" class="hover:text-caramel transition-colors">Why Oasis</a>
                 <a href="#reviews" class="hover:text-caramel transition-colors">Reviews</a>
                 <a href="#location" class="hover:text-caramel transition-colors">Visit & Contact</a>
             </nav>
 
             <!-- Header Action Buttons -->
             <div class="hidden md:flex items-center gap-3">
-                <a href="https://www.facebook.com/coffeeandbeyondph" target="_blank" class="text-roast hover:text-caramel p-2 rounded-full border border-roast/15 hover:border-caramel text-sm flex items-center gap-2 transition-all">
-                    <i class="fa-brands fa-facebook text-xs"></i>
-                    <span class="text-xs font-semibold">Message Us</span>
+                <a href="https://atoasiscoffee.com/" target="_blank" class="text-roast hover:text-caramel p-2 rounded-full border border-roast/15 hover:border-caramel text-sm flex items-center gap-2 transition-all">
+                    <i class="fa-solid fa-mug-hot text-xs"></i>
+                    <span class="text-xs font-semibold">Official Site</span>
                 </a>
                 <button onclick="openModal('reserveModal')" class="bg-roast hover:bg-caramel text-cream px-5 py-2.5 rounded-full font-medium text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
                     Reserve Table
@@ -180,7 +176,7 @@
                     <span>Loyalty Card</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
                 </a>
                 <a href="#features" onclick="toggleMobileMenu()" class="py-2 border-b border-roast/5 flex items-center justify-between">
-                    <span>Why Coffee & Beyond</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
+                    <span>Why A.T. Oasis</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
                 </a>
                 <a href="#reviews" onclick="toggleMobileMenu()" class="py-2 border-b border-roast/5 flex items-center justify-between">
                     <span>Customer Reviews</span> <i class="fa-solid fa-chevron-right text-xs opacity-50"></i>
@@ -193,7 +189,7 @@
                 <button onclick="toggleMobileMenu(); openModal('reserveModal');" class="w-full text-center bg-roast text-cream font-medium py-3 rounded-xl shadow-md">
                     Reserve Table / Inquiry
                 </button>
-                <a href="https://www.google.com/maps/place/Coffee+and+Beyond/@14.2955164,120.918079,15z" target="_blank" class="w-full text-center bg-cream border border-roast/20 text-roast font-medium py-2.5 rounded-xl flex items-center justify-center gap-2">
+                <a href="https://www.google.com/maps/place/A+T+Oasis+Coffee+%26+Tea+Shop/@33.4795516,-111.984505,17z" target="_blank" class="w-full text-center bg-cream border border-roast/20 text-roast font-medium py-2.5 rounded-xl flex items-center justify-center gap-2">
                     <i class="fa-solid fa-location-dot text-caramel"></i> Get Google Directions
                 </a>
             </div>
@@ -206,23 +202,23 @@
             <!-- Badges Bar -->
             <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-espresso/80 backdrop-blur-md px-4 py-2 rounded-full border border-amberGlow/30 mb-8 shadow-xl">
                 <span class="flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-amberGlow">
-                    <i class="fa-solid fa-star text-amber-400"></i> 4.8 Rating (300+ Reviews)
+                    <i class="fa-solid fa-star text-amber-400"></i> 4.9 Rating (Specialty Origin)
                 </span>
                 <span class="text-amberGlow/40">•</span>
                 <span class="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-cream">
-                    <i class="fa-solid fa-wifi text-amberGlow"></i> Free High-Speed WiFi
+                    <i class="fa-solid fa-mug-hot text-amberGlow"></i> Ethiopian & Eritrean Beans
                 </span>
                 <span class="text-amberGlow/40">•</span>
                 <span class="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-cream">
-                    <i class="fa-solid fa-paw text-amberGlow"></i> Pet Friendly
+                    <i class="fa-solid fa-car text-amberGlow"></i> Drive-Thru Available
                 </span>
             </div>
 
             <h1 class="font-playfair text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-softCream">
-                Premium Brews, Creamy Matcha & Industrial Loft Vibes
+                Authentic Ethiopian Coffee, Signature Ginger Brews & Spiced Chais
             </h1>
             <p class="text-base sm:text-xl text-cream/90 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-                Welcome to <span class="font-semibold text-amberGlow">COFFEE AND BEYOND</span> in Langkaan, Dasmariñas, Cavite. Your cozy sanctuary for artisanal coffee, hearty rice meals, savory pastas, and sweet waffles.
+                Welcome to <span class="font-semibold text-amberGlow">A.T. OASIS COFFEE & TEA SHOP</span> on E Thomas Road in Phoenix, Arizona. Your sanctuary for hand-selected beans from small East African farmers, signature scratch-made chais, and wholesome eats.
             </p>
 
             <!-- Call to Actions -->
@@ -231,7 +227,7 @@
                     <i class="fa-solid fa-mug-hot"></i> Explore Our Menu
                 </a>
                 <button onclick="openModal('reserveModal')" class="w-full sm:w-auto bg-warmBg/10 hover:bg-warmBg/20 border border-cream/30 backdrop-blur-md text-cream font-semibold px-8 py-4 rounded-full transition-all flex items-center justify-center gap-2 text-base">
-                    <i class="fa-solid fa-calendar-check text-amberGlow"></i> Reserve / Order
+                    <i class="fa-solid fa-calendar-check text-amberGlow"></i> Reserve / Inquire
                 </button>
             </div>
 
@@ -239,20 +235,20 @@
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-16 text-left max-w-4xl mx-auto pt-8 border-t border-cream/15">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-full bg-amberGlow/20 flex items-center justify-center text-amberGlow flex-shrink-0">
-                        <i class="fa-solid fa-laptop text-amberGlow"></i>
+                        <i class="fa-solid fa-seedling text-amberGlow"></i>
                     </div>
                     <div>
-                        <p class="text-xs text-cream/70">Study & Work</p>
-                        <p class="text-sm font-semibold text-cream">Power Outlets & WiFi</p>
+                        <p class="text-xs text-cream/70">Single Origin</p>
+                        <p class="text-sm font-semibold text-cream">Yirgacheffe & Sidamo</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-full bg-amberGlow/20 flex items-center justify-center text-amberGlow flex-shrink-0">
-                        <i class="fa-solid fa-[#000] fa-leaf text-amberGlow"></i>
+                        <i class="fa-solid fa-fire text-amberGlow"></i>
                     </div>
                     <div>
-                        <p class="text-xs text-cream/70">Matcha Haven</p>
-                        <p class="text-sm font-semibold text-cream">Creamy Japanese Matcha</p>
+                        <p class="text-xs text-cream/70">Trademark</p>
+                        <p class="text-sm font-semibold text-cream">A.T. Ginger Coffee</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
@@ -261,7 +257,7 @@
                     </div>
                     <div>
                         <p class="text-xs text-cream/70">Store Hours</p>
-                        <p class="text-sm font-semibold text-cream">Until 11:00 PM Daily</p>
+                        <p class="text-sm font-semibold text-cream">Opens Early Daily</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
@@ -269,8 +265,8 @@
                         <i class="fa-solid fa-utensils"></i>
                     </div>
                     <div>
-                        <p class="text-xs text-cream/70">Hearty Eats</p>
-                        <p class="text-sm font-semibold text-cream">Silogs, Pasta & Burgers</p>
+                        <p class="text-xs text-cream/70">Savory Eats</p>
+                        <p class="text-sm font-semibold text-cream">Sambusas, Quiche & More</p>
                     </div>
                 </div>
             </div>
@@ -283,16 +279,16 @@
             <!-- Left Text Content -->
             <div class="lg:col-span-6 space-y-6">
                 <div class="inline-flex items-center gap-2 text-caramel font-semibold text-sm tracking-wider uppercase bg-cream/80 px-3.5 py-1.5 rounded-full">
-                    <i class="fa-solid fa-heart text-xs"></i> About Coffee & Beyond
+                    <i class="fa-solid fa-heart text-xs"></i> About A.T. Oasis
                 </div>
                 <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast leading-tight">
-                    Your Industrial Loft Coffee Haven in Dasmariñas
+                    Rooted in East African Tradition & Passionate Craftsmanship
                 </h2>
                 <p class="text-roast/80 text-base sm:text-lg leading-relaxed">
-                    Situated along Green Breeze Avenue in Langkaan I, Dasmariñas, <span class="font-semibold text-roast">Coffee and Beyond</span> was designed to offer students, remote workers, and food lovers a stylish, loft-inspired retreat.
+                    Located at 4613 E Thomas Road in Phoenix, <span class="font-semibold text-roast">A.T. Oasis Coffee & Tea Shop</span> specializes in hand-selected, all-natural beans sourced directly from small farmers in Ethiopia and Eritrea.
                 </p>
                 <p class="text-roast/80 text-base leading-relaxed">
-                    From rich Tiramisu iced coffees and soothing matcha lattes to sizzling sisig, truffle pastas, and fluffy ice cream waffles—our menu goes far beyond ordinary coffee. Whether you're pulling a late-night study grind or hanging out with your favorite crew, we've got a warm table waiting for you.
+                    Founded with love by Aisha and her dedicated team, we pour our heart and soul into every cup. From our trade-secret A.T. Ginger Coffee and scratch-made organic chai teas to vegetable sambusas and savory breakfast items, every visit is a warm cultural experience.
                 </p>
 
                 <!-- Key Features List -->
@@ -300,15 +296,15 @@
                     <div class="flex items-start gap-3 p-3.5 bg-warmBg border border-amberGlow/20 rounded-xl shadow-sm">
                         <i class="fa-solid fa-mug-saucer text-caramel text-xl mt-1"></i>
                         <div>
-                            <h4 class="font-bold text-roast text-sm">Signature Coffee & Tea</h4>
-                            <p class="text-xs text-roast/70">Expertly extracted espresso, Yakult series, and fruit infusions.</p>
+                            <h4 class="font-bold text-roast text-sm">Specialty Origin Roasts</h4>
+                            <p class="text-xs text-roast/70">Ethiopian Yirgacheffe, Sidamo, and exclusive spice blends.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-3 p-3.5 bg-warmBg border border-amberGlow/20 rounded-xl shadow-sm">
-                        <i class="fa-solid fa-couch text-caramel text-xl mt-1"></i>
+                        <i class="fa-solid fa-car text-caramel text-xl mt-1"></i>
                         <div>
-                            <h4 class="font-bold text-roast text-sm">Industrial Loft Aesthetic</h4>
-                            <p class="text-xs text-roast/70">Warm lighting, high ceilings, photo-worthy spots, and comfortable seating.</p>
+                            <h4 class="font-bold text-roast text-sm">Convenient Drive-Thru</h4>
+                            <p class="text-xs text-roast/70">Two efficient drive-thru lanes for quick specialty beverages on the go.</p>
                         </div>
                     </div>
                 </div>
@@ -319,7 +315,7 @@
                     </a>
                     <div class="flex items-center gap-3 text-sm text-roast/80">
                         <i class="fa-solid fa-location-dot text-caramel"></i>
-                        <span>Langkaan I, Dasmariñas, Cavite</span>
+                        <span>4613 E Thomas Rd, Phoenix, AZ</span>
                     </div>
                 </div>
             </div>
@@ -330,23 +326,23 @@
                 
                 <div class="space-y-4">
                     <div class="overflow-hidden rounded-2xl shadow-lg border-2 border-amberGlow/20 group">
-                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Cafe Interior Atmosphere" class="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800" alt="Specialty Coffee Pour" class="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="bg-roast text-cream p-5 rounded-2xl shadow-md border border-amberGlow/30 text-center">
                         <p class="font-playfair text-3xl font-bold text-amberGlow mb-1">100%</p>
-                        <p class="text-xs uppercase tracking-widest font-semibold text-cream/90">Work & Chill Friendly</p>
-                        <p class="text-xs text-cream/70 mt-1">Fast WiFi and ample power sockets</p>
+                        <p class="text-xs uppercase tracking-widest font-semibold text-cream/90">All-Natural Beans</p>
+                        <p class="text-xs text-cream/70 mt-1">Direct from East African small farms</p>
                     </div>
                 </div>
 
                 <div class="space-y-4 pt-6 sm:pt-10">
                     <div class="bg-cream p-5 rounded-2xl shadow-md border border-amberGlow/30 text-center">
-                        <p class="font-playfair text-3xl font-bold text-roast mb-1">11:00 PM</p>
-                        <p class="text-xs uppercase tracking-widest font-semibold text-caramel">Open Till Late</p>
-                        <p class="text-xs text-roast/70 mt-1">Mon–Sat until 11PM, Sun until 10PM</p>
+                        <p class="font-playfair text-3xl font-bold text-roast mb-1">Scratch</p>
+                        <p class="text-xs uppercase tracking-widest font-semibold text-caramel">Organic Spice Chais</p>
+                        <p class="text-xs text-roast/70 mt-1">Unique house-made secret recipes</p>
                     </div>
                     <div class="overflow-hidden rounded-2xl shadow-lg border-2 border-amberGlow/20 group">
-                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=800" alt="Specialty Coffee Brew" class="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&q=80&w=800" alt="Tea & Pastry" class="w-full h-52 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
                 </div>
             </div>
@@ -362,15 +358,15 @@
                     Handcrafted Menu
                 </span>
                 <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast mt-4 mb-4">
-                    Brewed with Passion, Served with Care
+                    Brewed with Heritage, Served with Soul
                 </h2>
                 <p class="text-roast/80 text-base sm:text-lg">
-                    Discover our signature iced coffees, Yakult series, rich pastas, comfort rice bowls, and Belgian waffles.
+                    Explore our signature ginger coffee, Ethiopian origin roasts, organic scratch chais, traditional teas, and savory bites.
                 </p>
 
                 <!-- Search Input -->
                 <div class="mt-6 max-w-md mx-auto relative">
-                    <input type="text" id="menuSearch" oninput="filterMenu()" placeholder="Search coffee, pasta, sisig, waffle..." class="w-full bg-warmBg border border-amberGlow/40 rounded-full px-5 py-3 pl-11 text-roast placeholder-roast/50 focus:outline-none focus:ring-2 focus:ring-caramel shadow-sm text-sm">
+                    <input type="text" id="menuSearch" oninput="filterMenu()" placeholder="Search ginger coffee, chai, sambusa, latte..." class="w-full bg-warmBg border border-amberGlow/40 rounded-full px-5 py-3 pl-11 text-roast placeholder-roast/50 focus:outline-none focus:ring-2 focus:ring-caramel shadow-sm text-sm">
                     <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-caramel text-sm"></i>
                 </div>
             </div>
@@ -380,20 +376,20 @@
                 <button onclick="switchCategory('all')" class="tab-btn active px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 transition-all duration-200">
                     ✨ All Items
                 </button>
-                <button onclick="switchCategory('coffee')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
-                    ☕ Signature Coffee
+                <button onclick="switchCategory('signature')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    ☕ Signature & Ginger Coffee
                 </button>
-                <button onclick="switchCategory('coldbrew')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
-                    🧪 Yakult & Fruitea
+                <button onclick="switchCategory('espresso')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    🥛 Espresso Bar & Lattes
                 </button>
-                <button onclick="switchCategory('pasta')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
-                    🍝 Rice Meals & Pastas
+                <button onclick="switchCategory('beans')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    🌱 Whole Bean Bags
                 </button>
-                <button onclick="switchCategory('burgers')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
-                    🍔 Burgers & Sides
+                <button onclick="switchCategory('tea')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    🍵 Teas & Chais
                 </button>
-                <button onclick="switchCategory('desserts')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
-                    🧇 Ice Cream Waffles
+                <button onclick="switchCategory('eats')" class="tab-btn px-5 py-2.5 rounded-full font-medium text-sm border border-roast/20 bg-warmBg text-roast hover:bg-roast hover:text-cream transition-all duration-200">
+                    🥟 Sambusas & Eats
                 </button>
             </div>
 
@@ -404,14 +400,14 @@
 
             <!-- No results banner -->
             <div id="noResults" class="hidden text-center py-12">
-                <i class="fa-solid fa-utensils text-4xl text-caramel/50 mb-3 block"></i>
+                <i class="fa-solid fa-mug-hot text-4xl text-caramel/50 mb-3 block"></i>
                 <p class="text-roast text-lg font-medium">No menu items found</p>
                 <p class="text-roast/60 text-sm">Try searching for something else or switch categories.</p>
             </div>
 
             <!-- Note Footer -->
             <div class="mt-12 text-center text-xs text-roast/70 border-t border-amberGlow/20 pt-6">
-                💡 <span class="font-semibold">Food Allergy Note:</span> Please inform our barista/staff of any dietary preferences or allergies when ordering. Prices are subject to slight seasonal variations.
+                💡 <span class="font-semibold">Allergy Note:</span> Please inform our team of any dietary preferences or milk alternatives (oat, almond) when ordering. Prices subject to seasonal availability.
             </div>
         </div>
     </section>
@@ -421,16 +417,16 @@
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-10">
                 <span class="inline-flex items-center gap-2 text-caramel font-semibold text-sm uppercase tracking-widest bg-cream px-4 py-1.5 rounded-full border border-amberGlow/30">
-                    <i class="fa-solid fa-stamp"></i> Coffee & Beyond Rewards
+                    <i class="fa-solid fa-stamp"></i> A.T. Oasis Rewards
                 </span>
                 <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast mt-4 mb-3">A Little More with Every Visit</h2>
-                <p class="text-roast/75 text-sm sm:text-base">Collect 12 stamps. Get 50% off on your 6th visit and a free beverage on your 12th.</p>
+                <p class="text-roast/75 text-sm sm:text-base">Collect 12 stamps. Get 50% off on your 6th visit and a free specialty drink on your 12th.</p>
             </div>
 
             <div class="bg-roast text-cream rounded-3xl p-6 sm:p-10 shadow-xl border border-amberGlow/30">
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
                     <div>
-                        <p class="text-amberGlow text-xs uppercase tracking-[0.2em] font-bold">COFFEE AND BEYOND</p>
+                        <p class="text-amberGlow text-xs uppercase tracking-[0.2em] font-bold">A.T. OASIS COFFEE & TEA SHOP</p>
                         <h3 class="font-playfair text-2xl font-bold text-softCream mt-1">Your Loyalty Card</h3>
                     </div>
                     <div class="bg-espresso/70 rounded-2xl px-5 py-3 border border-amberGlow/20 text-center sm:text-right">
@@ -445,7 +441,7 @@
                     <div class="rounded-2xl border border-amberGlow/30 bg-espresso/60 p-4 flex items-center gap-3">
                         <span class="w-11 h-11 rounded-full bg-amberGlow text-espresso flex items-center justify-center font-bold">6</span>
                         <div>
-                            <p class="font-bold text-softCream">50% off Meal or Drink</p>
+                            <p class="font-bold text-softCream">50% off Drink or Snack</p>
                             <p class="text-xs text-cream/70">On your 6th visit</p>
                         </div>
                     </div>
@@ -467,142 +463,142 @@
         </div>
     </section>
 
-    <!-- Why Coffee and Beyond / Features Grid -->
+    <!-- Why A.T. Oasis / Features Grid -->
     <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
         <div class="text-center max-w-3xl mx-auto mb-12">
             <div class="flex items-center justify-center gap-3 mb-3">
                 <span class="text-caramel font-semibold text-sm uppercase tracking-widest bg-cream px-4 py-1.5 rounded-full border border-amberGlow/30">
-                    The Coffee & Beyond Experience
+                    The A.T. Oasis Experience
                 </span>
                 <button onclick="openModal('iconCustomizerModal')" class="bg-roast hover:bg-caramel text-cream text-xs font-semibold px-3 py-1.5 rounded-full transition-all flex items-center gap-1.5 shadow-sm border border-amberGlow/30">
                     <i data-lucide="settings" class="w-3.5 h-3.5"></i> Custom Icons
                 </button>
             </div>
             <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast mt-4 mb-4">
-                Why Dasmariñas Locals Love Coming Back
+                Why Phoenix Locals Love Coming Back
             </h2>
             <p class="text-roast/80 text-base sm:text-lg">
-                More than just a coffee shop—it's your cozy neighborhood hangout designed for study grinds, savory comfort food, and great conversations.
+                More than just a coffee house—it's a vibrant cultural oasis offering single-origin East African roasts, spice blends, and welcoming hospitality.
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="whyMamushGrid">
             <!-- Feature 1 -->
-            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-pet">
+            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-origin">
                 <div>
-                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-pet">
-                        <i data-lucide="dog"></i>
+                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-origin">
+                        <i data-lucide="globe"></i>
                     </div>
-                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Pet Friendly</h3>
+                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Small Farm Sourced</h3>
                     <p class="text-roast/75 text-sm leading-relaxed mb-4">
-                        Bring your furry companions along! We welcome pets so you can enjoy your favorite iced latte with your pets right by your side.
+                        Hand-selected, all-natural coffee beans sourced directly from small growers in Ethiopia and Eritrea for unparalleled flavor.
                     </p>
                 </div>
                 <div class="text-xs font-semibold text-caramel flex items-center gap-1">
-                    <span>Pets Always Welcome</span> <i class="fa-solid fa-paw"></i>
+                    <span>Authentic Origin</span> <i class="fa-solid fa-seedling"></i>
                 </div>
             </div>
 
             <!-- Feature 2 -->
-            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-night">
+            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-drive">
                 <div>
-                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-night">
-                        <i data-lucide="moon"></i>
+                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-drive">
+                        <i data-lucide="car"></i>
                     </div>
-                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Open Till Late</h3>
+                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Dual Drive-Thru</h3>
                     <p class="text-roast/75 text-sm leading-relaxed mb-4">
-                        Open daily until <span class="font-bold text-roast">11:00 PM</span> (10:00 PM on Sundays). Perfect for evening study sessions, after-school hangouts, or late dinner cravings.
+                        In a rush? Take advantage of our two dedicated drive-thru lanes for lightning-fast specialty coffee and tea service.
                     </p>
                 </div>
                 <div class="text-xs font-semibold text-caramel flex items-center gap-1">
-                    <span>Night Hours Daily</span> <i class="fa-solid fa-clock"></i>
+                    <span>Quick & Convenient</span> <i class="fa-solid fa-road"></i>
                 </div>
             </div>
 
             <!-- Feature 3 -->
-            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-work">
+            <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" id="card-spice">
                 <div>
-                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-work">
-                        <i data-lucide="laptop"></i>
+                    <div class="icon-box mb-6 group-hover:scale-110 transition-transform" id="icon-slot-spice">
+                        <i data-lucide="coffee"></i>
                     </div>
-                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Study & Remote Work Ready</h3>
+                    <h3 class="font-playfair text-2xl font-bold text-roast mb-3">Trademark Ginger Coffee</h3>
                     <p class="text-roast/75 text-sm leading-relaxed mb-4">
-                        Equipped with reliable high-speed WiFi, plenty of power outlets, and peaceful loft seating to help you crush your workload.
+                        Try our famous trade-secret A.T. Ginger Coffee blend crafted by Aisha herself, along with organic scratch-made chai teas.
                     </p>
                 </div>
                 <div class="text-xs font-semibold text-caramel flex items-center gap-1">
-                    <span>Free High-Speed WiFi</span> <i class="fa-solid fa-wifi"></i>
+                    <span>Unique Spiced Brews</span> <i class="fa-solid fa-fire"></i>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Customer Reviews Section -->
-    <section id="reviews" class="py-20 bg-roast text-cream">
+    <section id="reviews" class="py-20 bg-cream/40 border-y border-amberGlow/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <span class="text-amberGlow font-semibold text-sm uppercase tracking-widest bg-espresso/80 px-4 py-1.5 rounded-full border border-amberGlow/30">
-                    Guest Stories
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-caramel font-semibold text-sm uppercase tracking-widest bg-warmBg px-4 py-1.5 rounded-full border border-amberGlow/30">
+                    Community Praise
                 </span>
-                <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-softCream mt-4 mb-4">
-                    Loved by Dasma Coffee Lovers
+                <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast mt-4 mb-4">
+                    Loved by Phoenix Coffee Lovers
                 </h2>
-                <p class="text-cream/80 text-base sm:text-lg">
-                    Here's what our visitors have to say about our food, coffee, and ambient atmosphere.
+                <p class="text-roast/80 text-base sm:text-lg">
+                    See what guests are saying about our signature ginger coffee, authentic Ethiopian roasts, and warm hospitality.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-espresso/60 border border-amberGlow/20 rounded-3xl p-8 flex flex-col justify-between">
+                <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/30 shadow-sm relative flex flex-col justify-between">
                     <div>
-                        <div class="text-amber-400 text-sm mb-4">
+                        <div class="flex text-amber-500 gap-1 mb-4 text-sm">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-cream/90 italic mb-6 text-sm sm:text-base">
-                            "10/10 for the cozy vibe, friendly staff, and amazing matcha! Coffee & Beyond is definitely my go-to spot in Dasmariñas whenever I need to study."
+                        <p class="text-roast/80 text-sm leading-relaxed italic mb-6">
+                            "The A.T. Ginger Coffee is an absolute game changer! Incredible aroma, smooth spice, and you can truly taste the care and heart put into every single cup."
                         </p>
                     </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-cream/10">
-                        <div class="w-10 h-10 rounded-full bg-amberGlow/30 flex items-center justify-center text-amberGlow font-bold">D</div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-roast/10">
+                        <div class="w-10 h-10 rounded-full bg-caramel text-cream font-bold flex items-center justify-center font-serif text-sm">DM</div>
                         <div>
-                            <h4 class="font-bold text-softCream text-sm">Dai P.</h4>
-                            <p class="text-xs text-cream/60">Local Customer</p>
+                            <p class="font-bold text-roast text-sm">David Miller</p>
+                            <p class="text-xs text-roast/60">Google Local Review</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-espresso/60 border border-amberGlow/20 rounded-3xl p-8 flex flex-col justify-between">
+                <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/30 shadow-sm relative flex flex-col justify-between">
                     <div>
-                        <div class="text-amber-400 text-sm mb-4">
+                        <div class="flex text-amber-500 gap-1 mb-4 text-sm">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-cream/90 italic mb-6 text-sm sm:text-base">
-                            "Their Tiramisu Iced Coffee and Truffle Pasta are absolute game changers! Loft design gives off super aesthetic Instagram vibes."
+                        <p class="text-roast/80 text-sm leading-relaxed italic mb-6">
+                            "Having a drive-thru for high-end specialty Ethiopian coffee is so rare and convenient. The Yirgacheffe beans I bought to brew at home are phenomenal."
                         </p>
                     </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-cream/10">
-                        <div class="w-10 h-10 rounded-full bg-amberGlow/30 flex items-center justify-center text-amberGlow font-bold">R</div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-roast/10">
+                        <div class="w-10 h-10 rounded-full bg-caramel text-cream font-bold flex items-center justify-center font-serif text-sm">Sarah T.</div>
                         <div>
-                            <h4 class="font-bold text-softCream text-sm">Ritz M.</h4>
-                            <p class="text-xs text-cream/60">Food Enthusiast</p>
+                            <p class="font-bold text-roast text-sm">Sarah Thompson</p>
+                            <p class="text-xs text-roast/60">Verified Customer</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-espresso/60 border border-amberGlow/20 rounded-3xl p-8 flex flex-col justify-between">
+                <div class="bg-warmBg p-8 rounded-3xl border border-amberGlow/30 shadow-sm relative flex flex-col justify-between">
                     <div>
-                        <div class="text-amber-400 text-sm mb-4">
+                        <div class="flex text-amber-500 gap-1 mb-4 text-sm">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-cream/90 italic mb-6 text-sm sm:text-base">
-                            "The waffles served with vanilla ice cream are top tier! Plus, bring your laptop or bring your dog—everyone is welcomed warmly."
+                        <p class="text-roast/80 text-sm leading-relaxed italic mb-6">
+                            "Their vegetable sambusas and scratch-made dirty chai tea make for the ultimate afternoon pick-me-up. Such a welcoming neighborhood gem!"
                         </p>
                     </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-cream/10">
-                        <div class="w-10 h-10 rounded-full bg-amberGlow/30 flex items-center justify-center text-amberGlow font-bold">C</div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-roast/10">
+                        <div class="w-10 h-10 rounded-full bg-caramel text-cream font-bold flex items-center justify-center font-serif text-sm">JC</div>
                         <div>
-                            <h4 class="font-bold text-softCream text-sm">Cedric V.</h4>
-                            <p class="text-xs text-cream/60">Regular Visitor</p>
+                            <p class="font-bold text-roast text-sm">Jason Cole</p>
+                            <p class="text-xs text-roast/60">Phoenix Regular</p>
                         </div>
                     </div>
                 </div>
@@ -615,362 +611,495 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-5 space-y-6">
                 <span class="text-caramel font-semibold text-sm uppercase tracking-widest bg-cream px-4 py-1.5 rounded-full border border-amberGlow/30">
-                    Visit Us
+                    Visit & Connect
                 </span>
-                <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-roast leading-tight">
-                    Where to Find Coffee & Beyond
+                <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-roast">
+                    Come Experience A.T. Oasis Today
                 </h2>
-                <p class="text-roast/80 text-sm sm:text-base leading-relaxed">
-                    Conveniently located in Green Breeze Avenue, Langkaan I, Dasmariñas, Cavite. Easy parking and accessible via major roads.
+                <p class="text-roast/80 text-base leading-relaxed">
+                    Conveniently located on East Thomas Road in Phoenix with drive-thru service available. Stop by for your morning brew or afternoon tea.
                 </p>
 
                 <div class="space-y-4 pt-2">
-                    <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4 p-4 bg-warmBg border border-amberGlow/25 rounded-2xl">
                         <div class="w-10 h-10 rounded-xl bg-roast text-cream flex items-center justify-center flex-shrink-0 mt-1">
-                            <i class="fa-solid fa-location-dot text-amberGlow"></i>
+                            <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-roast text-base">Address</h4>
-                            <p class="text-sm text-roast/80">032 Green Breeze Ave, Langkaan I, Dasmariñas, 4114 Cavite, Philippines</p>
+                            <h4 class="font-bold text-roast text-sm">Address</h4>
+                            <p class="text-roast/75 text-sm">4613 E Thomas Rd, Phoenix, AZ 85018, United States</p>
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4 p-4 bg-warmBg border border-amberGlow/25 rounded-2xl">
                         <div class="w-10 h-10 rounded-xl bg-roast text-cream flex items-center justify-center flex-shrink-0 mt-1">
-                            <i class="fa-solid fa-clock text-amberGlow"></i>
+                            <i class="fa-solid fa-clock"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-roast text-base">Operating Hours</h4>
-                            <p class="text-sm text-roast/80">Monday – Saturday: 11:00 AM – 11:00 PM</p>
-                            <p class="text-sm text-roast/80">Sunday: 11:00 AM – 10:00 PM</p>
+                            <h4 class="font-bold text-roast text-sm">Operating Hours</h4>
+                            <p class="text-roast/75 text-sm">Mon–Sat: 7:00 AM – 4:00 PM</p>
+                            <p class="text-roast/75 text-sm">Sunday: 7:00 AM – 3:00 PM</p>
+                            <p class="text-xs text-caramel mt-1 font-medium">Drive-thru open early</p>
                         </div>
                     </div>
 
-                    <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4 p-4 bg-warmBg border border-amberGlow/25 rounded-2xl">
                         <div class="w-10 h-10 rounded-xl bg-roast text-cream flex items-center justify-center flex-shrink-0 mt-1">
-                            <i class="fa-brands fa-facebook text-amberGlow"></i>
+                            <i class="fa-solid fa-phone"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-roast text-base">Socials & Direct Messaging</h4>
-                            <p class="text-sm text-roast/80">Facebook: @coffeeandbeyondph</p>
+                            <h4 class="font-bold text-roast text-sm">Phone</h4>
+                            <p class="text-roast/75 text-sm">(602) 957-2054</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="pt-4 flex flex-wrap gap-3">
-                    <a href="https://www.google.com/maps/place/Coffee+and+Beyond/@14.2955164,120.918079,15z" target="_blank" class="bg-roast hover:bg-caramel text-cream font-medium px-6 py-3 rounded-xl transition-colors shadow-md inline-flex items-center gap-2 text-sm">
-                        <i class="fa-solid fa-map-location-dot"></i> Open Google Maps
+                <div class="pt-2 flex gap-3">
+                    <a href="https://www.google.com/maps/place/A+T+Oasis+Coffee+%26+Tea+Shop/@33.4795516,-111.984505,17z" target="_blank" class="bg-roast hover:bg-caramel text-cream font-medium px-6 py-3 rounded-xl transition-colors shadow-md inline-flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-map-location-dot"></i> Open in Google Maps
                     </a>
-                    <button onclick="openModal('reserveModal')" class="bg-cream hover:bg-amberGlow/30 border border-roast/20 text-roast font-semibold px-6 py-3 rounded-xl transition-colors text-sm">
-                        Inquire / Book Table
-                    </button>
+                    <a href="https://atoasiscoffee.com/" target="_blank" class="bg-cream border border-roast/20 text-roast hover:bg-roast hover:text-cream font-medium px-6 py-3 rounded-xl transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-globe"></i> Official Site
+                    </a>
                 </div>
             </div>
 
-            <!-- Map Container -->
-            <div class="lg:col-span-7 h-[420px] rounded-3xl overflow-hidden shadow-xl border-2 border-amberGlow/30 relative">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3866.527878848148!2d120.9381148!3d14.2951063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d5016e4a8275%3A0xf1e023584a51f969!2sCoffee%20and%20Beyond!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph" 
-                    class="w-full h-full border-0" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <!-- Google Map Embed Container -->
+            <div class="lg:col-span-7">
+                <div class="rounded-3xl overflow-hidden shadow-xl border-2 border-amberGlow/30 h-[450px] relative bg-warmBg">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.535039478335!2d-111.984505!3d33.4795516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0c38d1c43cd3%3A0xbe854b6da02538bb!2sA%20T%20Oasis%20Coffee%20%26%20Tea%20Shop!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="A.T. Oasis Coffee & Tea Shop Location Map">
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-espresso text-cream/70 py-12 border-t border-amberGlow/20">
+    <footer class="bg-roast text-cream py-16 border-t border-amberGlow/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-cream/10 pb-8 mb-8">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-amberGlow text-espresso flex items-center justify-center font-serif text-lg font-bold">
-                        C&B
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cream text-roast flex items-center justify-center font-serif text-lg font-bold">
+                            AT
+                        </div>
+                        <span class="font-serif text-2xl font-bold text-softCream">A.T. OASIS COFFEE & TEA SHOP</span>
                     </div>
-                    <div>
-                        <span class="font-serif text-lg font-bold text-softCream block">COFFEE AND BEYOND</span>
-                        <span class="text-[10px] tracking-widest text-amberGlow uppercase block">Langkaan I, Dasmariñas, Cavite</span>
+                    <p class="text-cream/80 text-sm max-w-sm leading-relaxed">
+                        Hand-selected organic coffees from small farmers in Ethiopia and Eritrea, signature ginger spice blends, and scratch-made chais in Phoenix, Arizona.
+                    </p>
+                    <div class="flex items-center space-x-4 pt-2">
+                        <a href="https://www.facebook.com" target="_blank" class="w-10 h-10 rounded-full bg-espresso hover:bg-caramel text-cream flex items-center justify-center transition-colors border border-amberGlow/30" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-espresso hover:bg-caramel text-cream flex items-center justify-center transition-colors border border-amberGlow/30" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                        </a>
+                        <a href="https://atoasiscoffee.com/" target="_blank" class="w-10 h-10 rounded-full bg-espresso hover:bg-caramel text-cream flex items-center justify-center transition-colors border border-amberGlow/30" aria-label="Website">
+                            <i class="fa-solid fa-globe text-sm"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="flex items-center space-x-6 text-sm">
-                    <a href="#about" class="hover:text-amberGlow transition-colors">About</a>
-                    <a href="#menu" class="hover:text-amberGlow transition-colors">Menu</a>
-                    <a href="#loyalty" class="hover:text-amberGlow transition-colors">Rewards</a>
-                    <a href="#location" class="hover:text-amberGlow transition-colors">Location</a>
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-softCream mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm text-cream/80">
+                        <li><a href="#about" class="hover:text-amberGlow transition-colors">About Us</a></li>
+                        <li><a href="#menu" class="hover:text-amberGlow transition-colors">Our Menu</a></li>
+                        <li><a href="#loyalty" class="hover:text-amberGlow transition-colors">Loyalty Rewards</a></li>
+                        <li><a href="#features" class="hover:text-amberGlow transition-colors">Why Oasis</a></li>
+                        <li><a href="#reviews" class="hover:text-amberGlow transition-colors">Customer Reviews</a></li>
+                    </ul>
                 </div>
 
-                <div class="flex items-center gap-3">
-                    <a href="https://www.facebook.com/coffeeandbeyondph" target="_blank" class="w-9 h-9 rounded-full bg-roast hover:bg-caramel text-cream flex items-center justify-center transition-colors">
-                        <i class="fa-brands fa-facebook-f text-sm"></i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-roast hover:bg-caramel text-cream flex items-center justify-center transition-colors">
-                        <i class="fa-brands fa-instagram text-sm"></i>
-                    </a>
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-softCream mb-4">Store Hours</h4>
+                    <ul class="space-y-2.5 text-sm text-cream/80">
+                        <li class="flex justify-between"><span>Mon–Sat:</span> <span class="font-semibold text-amberGlow">7:00 AM – 4 PM</span></li>
+                        <li class="flex justify-between"><span>Sunday:</span> <span class="font-semibold text-amberGlow">7:00 AM – 3 PM</span></li>
+                        <li class="pt-3 border-t border-cream/10 text-xs text-cream/60">4613 E Thomas Rd, Phoenix, AZ</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row items-center justify-between text-xs gap-4 text-cream/50">
-                <p>&copy; 2026 Coffee and Beyond PH. All rights reserved.</p>
-                <p>Designed with warmth & care for Dasmariñas coffee enthusiasts.</p>
+            <div class="pt-8 border-t border-cream/15 flex flex-col sm:flex-row items-center justify-between text-xs text-cream/60 gap-4">
+                <p>&copy; 2026 A.T. Oasis Coffee & Tea Shop. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-amberGlow transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-amberGlow transition-colors">Terms of Service</a>
+                    <a href="#reservation" class="hover:text-amberGlow transition-colors">Table Inquiry</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Reservation / Inquiry Modal -->
-    <div id="reserveModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-espresso/80 backdrop-blur-sm p-4">
-        <div class="bg-warmBg rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-amberGlow/30 shadow-2xl relative max-h-[90vh] overflow-y-auto">
-            <button onclick="closeModal('reserveModal')" class="absolute top-5 right-5 text-roast/50 hover:text-roast text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-cream">
-                ✕
+    <div id="reserveModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-espresso/80 backdrop-blur-sm p-4">
+        <div class="bg-warmBg rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-amberGlow/30 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal('reserveModal')" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-cream hover:bg-roast hover:text-cream text-roast flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-sm"></i>
             </button>
+
             <div class="text-center mb-6">
-                <h3 class="font-playfair text-2xl font-bold text-roast">Table Reservation & Inquiry</h3>
-                <p class="text-xs text-roast/70 mt-1">Book a table or send us your advance order inquiries</p>
+                <span class="text-caramel font-semibold text-xs uppercase tracking-widest bg-cream px-3 py-1 rounded-full border border-amberGlow/20">
+                    A.T. Oasis Table Inquiry
+                </span>
+                <h3 class="font-playfair text-2xl sm:text-3xl font-bold text-roast mt-2">Reserve or Ask Us</h3>
+                <p class="text-roast/70 text-xs sm:text-sm mt-1">Let us know when you're visiting our Phoenix shop.</p>
             </div>
 
-            <form onsubmit="handleReservationSubmit(event)" class="space-y-4">
+            <form onsubmit="handleReservation(event)" class="space-y-4">
                 <div>
-                    <label class="block text-xs font-semibold text-roast mb-1">Full Name</label>
-                    <input type="text" required class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel" placeholder="John Doe">
+                    <label class="block text-xs font-semibold text-roast uppercase tracking-wider mb-1">Your Full Name</label>
+                    <input type="text" required placeholder="Jane Doe" class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-roast text-sm focus:outline-none focus:ring-2 focus:ring-caramel">
                 </div>
-                <div class="grid grid-cols-2 gap-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-xs font-semibold text-roast mb-1">Contact Number</label>
-                        <input type="tel" required class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel" placeholder="09123456789">
+                        <label class="block text-xs font-semibold text-roast uppercase tracking-wider mb-1">Email or Phone</label>
+                        <input type="text" required placeholder="phone or email" class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-roast text-sm focus:outline-none focus:ring-2 focus:ring-caramel">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold text-roast mb-1">Number of Guests</label>
-                        <input type="number" min="1" max="20" value="2" required class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                        <label class="block text-xs font-semibold text-roast uppercase tracking-wider mb-1">Number of Guests</label>
+                        <select class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-roast text-sm focus:outline-none focus:ring-2 focus:ring-caramel">
+                            <option>1–2 People (Cozy Table)</option>
+                            <option>3–4 People (Small Group)</option>
+                            <option>5+ People (Group Hangout)</option>
+                        </select>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-xs font-semibold text-roast mb-1">Date</label>
-                        <input type="date" required class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                        <label class="block text-xs font-semibold text-roast uppercase tracking-wider mb-1">Preferred Date</label>
+                        <input type="date" required class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-roast text-sm focus:outline-none focus:ring-2 focus:ring-caramel">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold text-roast mb-1">Time</label>
-                        <input type="time" required class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel">
+                        <label class="block text-xs font-semibold text-roast uppercase tracking-wider mb-1">Preferred Time</label>
+                        <input type="time" required class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-roast text-sm focus:outline-none focus:ring-2 focus:ring-caramel">
                     </div>
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-roast mb-1">Special Requests / Advance Orders</label>
-                    <textarea rows="3" class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast focus:outline-none focus:ring-2 focus:ring-caramel" placeholder="Indoor/Outdoor seating, pet coming along, etc."></textarea>
+                    <label class="block text-xs font-semibold text-roast uppercase tracking-wider mb-1">Special Requests / Notes</label>
+                    <textarea rows="2" placeholder="Drive-thru order inquiry, seating preference..." class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-roast text-sm focus:outline-none focus:ring-2 focus:ring-caramel"></textarea>
                 </div>
-                <button type="submit" class="w-full bg-roast hover:bg-caramel text-cream font-bold py-3 rounded-xl shadow-md transition-colors text-sm">
-                    Submit Reservation
+                <button type="submit" class="w-full bg-roast hover:bg-caramel text-cream font-bold py-3.5 rounded-xl transition-colors shadow-md text-sm mt-2">
+                    Submit Inquiry
                 </button>
             </form>
         </div>
     </div>
 
     <!-- Icon Customizer Modal -->
-    <div id="iconCustomizerModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-espresso/80 backdrop-blur-sm p-4">
-        <div class="bg-warmBg rounded-3xl max-w-md w-full p-6 border border-amberGlow/30 shadow-2xl relative">
-            <button onclick="closeModal('iconCustomizerModal')" class="absolute top-5 right-5 text-roast/50 hover:text-roast text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-cream">
-                ✕
+    <div id="iconCustomizerModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-espresso/80 backdrop-blur-sm p-4">
+        <div class="bg-warmBg rounded-3xl max-w-md w-full p-6 sm:p-8 border border-amberGlow/30 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeModal('iconCustomizerModal')" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-cream hover:bg-roast hover:text-cream text-roast flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-sm"></i>
             </button>
+
             <div class="text-center mb-6">
-                <h3 class="font-playfair text-2xl font-bold text-roast">Customize Feature Icons</h3>
-                <p class="text-xs text-roast/70 mt-1">Select your preferred Lucide icon for feature cards</p>
+                <span class="text-caramel font-semibold text-xs uppercase tracking-widest bg-cream px-3 py-1 rounded-full border border-amberGlow/20">
+                    Feature Customizer
+                </span>
+                <h3 class="font-playfair text-2xl font-bold text-roast mt-2">Customize Experience Cards</h3>
+                <p class="text-roast/70 text-xs mt-1">Pick a custom icon style for the features grid.</p>
             </div>
 
             <div class="space-y-4">
                 <div>
-                    <label class="block text-xs font-semibold text-roast mb-1">Pet Friendly Card Icon</label>
-                    <select id="iconSelectPet" onchange="updateCardIcon('pet', this.value)" class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast">
-                        <option value="dog">Dog (Default)</option>
-                        <option value="cat">Cat</option>
-                        <option value="heart">Heart</option>
-                        <option value="smile">Smile</option>
+                    <label class="block text-xs font-semibold text-roast uppercase tracking-wider mb-1">Card to Customize</label>
+                    <select id="customizerCardSelect" class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-roast text-sm focus:outline-none">
+                        <option value="origin">Small Farm Sourced Card</option>
+                        <option value="drive">Dual Drive-Thru Card</option>
+                        <option value="spice">Trademark Ginger Coffee Card</option>
                     </select>
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-roast mb-1">Late Hours Card Icon</label>
-                    <select id="iconSelectNight" onchange="updateCardIcon('night', this.value)" class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast">
-                        <option value="moon">Moon (Default)</option>
-                        <option value="clock">Clock</option>
-                        <option value="sparkles">Sparkles</option>
-                        <option value="coffee">Coffee</option>
+                    <label class="block text-xs font-semibold text-roast uppercase tracking-wider mb-1">Select Icon Style</label>
+                    <select id="customizerIconSelect" class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-roast text-sm focus:outline-none">
+                        <option value="globe">Globe / Origin</option>
+                        <option value="car">Car / Drive-Thru</option>
+                        <option value="coffee">Coffee Cup</option>
+                        <option value="seedling">Seedling / Natural</option>
+                        <option value="fire">Fire / Spiced</option>
+                        <option value="star">Star / Rating</option>
                     </select>
                 </div>
-                <div>
-                    <label class="block text-xs font-semibold text-roast mb-1">Work Friendly Card Icon</label>
-                    <select id="iconSelectWork" onchange="updateCardIcon('work', this.value)" class="w-full bg-cream/50 border border-amberGlow/30 rounded-xl px-4 py-2.5 text-sm text-roast">
-                        <option value="laptop">Laptop (Default)</option>
-                        <option value="wifi">WiFi</option>
-                        <option value="zap">Zap (Power)</option>
-                        <option value="book-open">Book</option>
-                    </select>
-                </div>
-                <button onclick="closeModal('iconCustomizerModal')" class="w-full bg-roast text-cream font-semibold py-2.5 rounded-xl text-sm mt-2">
-                    Apply Changes
+                <button onclick="applyCustomIcon()" class="w-full bg-roast hover:bg-caramel text-cream font-bold py-3 rounded-xl transition-colors shadow-md text-sm">
+                    Apply Custom Icon
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- JavaScript Application Logic -->
+    <!-- Confirmation Modal -->
+    <div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-espresso/80 backdrop-blur-sm p-4">
+        <div class="bg-warmBg rounded-3xl max-w-sm w-full p-6 text-center border border-amberGlow/30 shadow-2xl">
+            <div class="w-16 h-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center mx-auto mb-4 text-2xl">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="font-playfair text-2xl font-bold text-roast mb-2">Request Received!</h3>
+            <p id="successModalText" class="text-roast/70 text-sm mb-6">Thank you! We've received your request and will get back to you shortly.</p>
+            <button onclick="closeModal('successModal')" class="w-full bg-roast hover:bg-caramel text-cream font-bold py-3 rounded-xl transition-colors text-sm">
+                Got It
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Application Code -->
     <script>
-        // Sample Menu Database
+        // Menu Dataset for A.T. Oasis Coffee & Tea Shop
         const menuItems = [
-            { id: 1, name: "Tiramisu Iced Coffee", category: "coffee", price: "₱273", desc: "Espresso layers blended with smooth mascarpone cream & cocoa dust.", tag: "Bestseller", image: "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&q=80&w=400" },
-            { id: 2, name: "Spanish Latte", category: "coffee", price: "₱160", desc: "Rich espresso combined with creamy condensed milk and fresh dairy.", tag: "Popular", image: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=400" },
-            { id: 3, name: "Kiwi Yakult", category: "coldbrew", price: "₱182", desc: "Refreshing kiwi flavor blended with sweet and tangy probiotic Yakult.", tag: "Refreshing", image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=400" },
-            { id: 4, name: "Strawberry Yakult", category: "coldbrew", price: "₱182", desc: "Real strawberry blend paired with probiotic Yakult goodness.", tag: "Kids Favorite", image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&q=80&w=400" },
-            { id: 5, name: "Lemon Fruitea", category: "coldbrew", price: "₱130", desc: "Crisp brewed tea infused with fresh citrus lemon sweetness.", tag: "Iced", image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400" },
-            { id: 6, name: "Sizzling Sisig Rice Meal", category: "pasta", price: "₱265", desc: "Sizzling seasoned pork sisig served with egg & garlic rice.", tag: "Chef Special", image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=400" },
-            { id: 7, name: "Creamy Carbonara", category: "pasta", price: "₱287", desc: "Rich pasta tossed in creamy bacon cheese sauce with garlic bread.", tag: "Comfort Food", image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&q=80&w=400" },
-            { id: 8, name: "Truffle Pasta", category: "pasta", price: "₱364", desc: "Infused with aromatic truffle oil, parmesan cheese, & mushrooms.", tag: "Gourmet", image: "https://images.unsplash.com/photo-1621996346565-e3def6166763?auto=format&fit=crop&q=80&w=400" },
-            { id: 9, name: "Beef Tapsilog", category: "pasta", price: "₱252", desc: "Tender marinated beef tapa served with garlic rice & fried egg.", tag: "Filipino Classic", image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&q=80&w=400" },
-            { id: 10, name: "Signature Cheese Burger", category: "burgers", price: "₱259", desc: "Juicy beef patty topped with melted cheese, lettuce, & house sauce.", tag: "Must Try", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=400" },
-            { id: 11, name: "Belgian Fries & Dip", category: "burgers", price: "₱195", desc: "Thick cut golden Belgian fries served with garlic dip.", tag: "Sharing", image: "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&q=80&w=400" },
-            { id: 12, name: "Nutella Ice Cream Waffle", category: "desserts", price: "₱210", desc: "Golden waffle drizzled with Nutella & served with vanilla ice cream.", tag: "Sweet Tooth", image: "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&q=80&w=400" }
+            {
+                id: 1,
+                name: "A.T. Ginger Coffee",
+                category: "signature",
+                price: "$7.00",
+                badge: "Trademark Blend",
+                desc: "Aisha's trade-secret signature spiced ginger coffee blend. Warm, robust, and uniquely invigorating.",
+                image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600"
+            },
+            {
+                id: 2,
+                name: "A.T. Dirty Chai Tea",
+                category: "tea",
+                price: "$8.75",
+                badge: "Fan Favorite",
+                desc: "Scratch-made organic spiced chai tea blended with a rich shot of espresso.",
+                image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=80&w=600"
+            },
+            {
+                id: 3,
+                name: "Ethiopian Yirgacheffe Beans (Whole Bean)",
+                category: "beans",
+                price: "$26.00",
+                badge: "Single Origin",
+                desc: "Bright berry and floral notes from the renowned Yirgacheffe region of Ethiopia.",
+                image: "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=600"
+            },
+            {
+                id: 4,
+                name: "Ethiopian Sidamo Beans (Whole Bean)",
+                category: "beans",
+                price: "$26.00",
+                badge: "Specialty Roast",
+                desc: "Rich, bright floral aromatics with subtle notes of chocolate and light spices.",
+                image: "https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&q=80&w=600"
+            },
+            {
+                id: 5,
+                name: "Vanilla Latte (Hot or Iced)",
+                category: "espresso",
+                price: "$7.25",
+                badge: "Popular",
+                desc: "Smooth espresso shot paired with premium vanilla flavoring and velvety steamed milk.",
+                image: "https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=600"
+            },
+            {
+                id: 6,
+                name: "Vegetable Sambusa",
+                category: "eats",
+                price: "$4.50",
+                badge: "Must Try",
+                desc: "Crispy pastry dough filled with seasoned lentils and wholesome vegetables.",
+                image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&q=80&w=600"
+            },
+            {
+                id: 7,
+                name: "Black Spice Tea",
+                category: "tea",
+                price: "$5.15",
+                badge: "Traditional",
+                desc: "Organic black tea prepared with Aisha's secret blend of spices.",
+                image: "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&q=80&w=600"
+            },
+            {
+                id: 8,
+                name: "Turkey Sandwich & Cheese",
+                category: "eats",
+                price: "$12.00",
+                badge: "Fresh Eats",
+                desc: "Sliced deli turkey, fresh lettuce, and melted cheese on freshly baked artisanal bread.",
+                image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&q=80&w=600"
+            },
+            {
+                id: 9,
+                name: "Classic Cappuccino",
+                category: "espresso",
+                price: "$6.00",
+                badge: "Classic",
+                desc: "Perfect balance of espresso, steamed milk, and airy microfoam.",
+                image: "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&q=80&w=600"
+            }
         ];
 
         let currentCategory = 'all';
 
         // Render Menu Items
-        function renderMenu(items) {
+        function renderMenu(itemsToRender) {
             const grid = document.getElementById('menuGrid');
             const noResults = document.getElementById('noResults');
+            grid.innerHTML = '';
 
-            if (!items.length) {
-                grid.innerHTML = '';
+            if (itemsToRender.length === 0) {
                 noResults.classList.remove('hidden');
                 return;
+            } else {
+                noResults.classList.add('hidden');
             }
 
-            noResults.classList.add('hidden');
-            grid.innerHTML = items.map(item => `
-                <div class="bg-warmBg rounded-3xl border border-amberGlow/25 overflow-hidden shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-48 overflow-hidden">
-                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <span class="absolute top-3 right-3 bg-roast/90 backdrop-blur-md text-cream text-[11px] font-bold px-3 py-1 rounded-full border border-amberGlow/30">
-                                ${item.tag}
-                            </span>
+            itemsToRender.forEach(item => {
+                const card = document.createElement('div');
+                card.className = "bg-warmBg rounded-3xl overflow-hidden border border-amberGlow/25 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group";
+                card.innerHTML = `
+                    <div class="relative overflow-hidden h-52">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 left-3 bg-espresso/80 backdrop-blur-md text-amberGlow text-xs font-semibold px-3 py-1 rounded-full border border-amberGlow/30">
+                            ${item.badge}
+                        </span>
+                        <span class="absolute top-3 right-3 bg-warmBg/90 backdrop-blur-md text-roast font-bold text-sm px-3 py-1 rounded-full shadow-md">
+                            ${item.price}
+                        </span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="font-playfair text-xl font-bold text-roast mb-2 group-hover:text-caramel transition-colors">${item.name}</h3>
+                            <p class="text-roast/75 text-xs sm:text-sm leading-relaxed mb-4">${item.desc}</p>
                         </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between gap-2 mb-2">
-                                <h3 class="font-playfair text-xl font-bold text-roast">${item.name}</h3>
-                                <span class="font-bold text-caramel text-lg">${item.price}</span>
-                            </div>
-                            <p class="text-roast/70 text-xs sm:text-sm leading-relaxed">${item.desc}</p>
+                        <div class="pt-4 border-t border-roast/10 flex items-center justify-between">
+                            <span class="text-xs text-caramel font-semibold uppercase tracking-wider">A.T. Oasis Specialty</span>
+                            <button onclick="openModal('reserveModal')" class="text-xs bg-roast hover:bg-caramel text-cream px-3.5 py-2 rounded-xl transition-colors font-medium">
+                                Order / Inquire
+                            </button>
                         </div>
                     </div>
-                    <div class="px-6 pb-6 pt-0">
-                        <button onclick="openModal('reserveModal')" class="w-full bg-cream hover:bg-amberGlow/30 text-roast border border-roast/15 font-semibold py-2.5 rounded-xl transition-colors text-xs flex items-center justify-center gap-1.5">
-                            <i class="fa-solid fa-cart-plus text-caramel"></i> Order / Inquire
-                        </button>
-                    </div>
-                </div>
-            `).join('');
+                `;
+                grid.appendChild(card);
+            });
         }
 
-        // Filter Menu
+        // Switch Menu Category
+        function switchCategory(category) {
+            currentCategory = category;
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+            filterMenu();
+        }
+
+        // Filter Menu by Search & Category
         function filterMenu() {
             const query = document.getElementById('menuSearch').value.toLowerCase();
             const filtered = menuItems.filter(item => {
                 const matchesCategory = currentCategory === 'all' || item.category === currentCategory;
-                const matchesQuery = item.name.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query);
-                return matchesCategory && matchesQuery;
+                const matchesSearch = item.name.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query);
+                return matchesCategory && matchesSearch;
             });
             renderMenu(filtered);
-        }
-
-        // Switch Category
-        function switchCategory(cat) {
-            currentCategory = cat;
-            const buttons = document.querySelectorAll('#categoryTabs button');
-            buttons.forEach(btn => {
-                btn.classList.remove('active', 'bg-roast', 'text-cream');
-                btn.classList.add('bg-warmBg', 'text-roast');
-            });
-            event.currentTarget.classList.add('active');
-            event.currentTarget.classList.remove('bg-warmBg', 'text-roast');
-            filterMenu();
-        }
-
-        // Loyalty Card Logic
-        const STORAGE_KEY = 'cb_loyalty_stamps_v1';
-
-        function getLoyaltyStamps() {
-            return parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
-        }
-
-        function renderLoyaltyCard() {
-            const count = getLoyaltyStamps();
-            document.getElementById('loyaltyCount').innerText = count;
-            const container = document.getElementById('loyaltyStamps');
-            const msg = document.getElementById('loyaltyMessage');
-
-            let stampsHtml = '';
-            for (let i = 1; i <= 12; i++) {
-                const isStamped = i <= count;
-                stampsHtml += `
-                    <div class="aspect-square rounded-2xl border-2 ${isStamped ? 'border-amberGlow bg-amberGlow/20 text-amberGlow shadow-inner' : 'border-amberGlow/20 bg-espresso/40 text-cream/30'} flex flex-col items-center justify-center relative transition-all">
-                        <span class="text-[10px] font-bold opacity-60 absolute top-1.5 left-2">${i}</span>
-                        ${isStamped ? '<i class="fa-solid fa-stamp text-xl sm:text-2xl animate-bounce"></i>' : '<i class="fa-solid fa-mug-saucer text-lg sm:text-xl"></i>'}
-                    </div>
-                `;
-            }
-            container.innerHTML = stampsHtml;
-
-            if (count === 6) {
-                msg.innerText = "🎉 Congratulations! You unlocked 50% off on your 6th visit!";
-            } else if (count === 12) {
-                msg.innerText = "🎁 Full Card Complete! Enjoy your FREE signature beverage on us!";
-            } else {
-                msg.innerText = "";
-            }
-        }
-
-        function recordLoyaltyPurchase() {
-            let count = getLoyaltyStamps();
-            if (count >= 12) {
-                count = 0; // Reset after full card
-            }
-            count++;
-            localStorage.setItem(STORAGE_KEY, count.toString());
-            renderLoyaltyCard();
         }
 
         // Mobile Menu Toggle
         function toggleMobileMenu() {
             const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
             menu.classList.toggle('hidden');
-        }
-
-        // Modal Helpers
-        function openModal(id) {
-            document.getElementById(id).classList.remove('hidden');
-        }
-
-        function closeModal(id) {
-            document.getElementById(id).classList.add('hidden');
-        }
-
-        function handleReservationSubmit(e) {
-            e.preventDefault();
-            alert("Thank you for your reservation inquiry! Our team will confirm your table shortly.");
-            closeModal('reserveModal');
-        }
-
-        // Customizer Icon Updater
-        function updateCardIcon(slot, iconName) {
-            const slotElement = document.getElementById(`icon-slot-${slot}`);
-            if (slotElement) {
-                slotElement.innerHTML = `<i data-lucide="${iconName}"></i>`;
-                lucide.createIcons();
+            if (menu.classList.contains('hidden')) {
+                icon.className = "fa-solid fa-bars text-xl";
+            } else {
+                icon.className = "fa-solid fa-xmark text-xl";
             }
         }
 
-        // Initialization
-        document.addEventListener('DOMContentLoaded', () => {
+        // Modal Controls
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.getElementById(modalId).classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('flex');
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function handleReservation(event) {
+            event.preventDefault();
+            closeModal('reserveModal');
+            document.getElementById('successModalText').innerText = "Thank you! Your table inquiry or order note has been sent to A.T. Oasis Coffee & Tea Shop.";
+            openModal('successModal');
+            event.target.reset();
+        }
+
+        // Loyalty Card Logic
+        let loyaltyStamps = parseInt(localStorage.getItem('atoasis_loyalty_stamps')) || 0;
+
+        function updateLoyaltyDisplay() {
+            const container = document.getElementById('loyaltyStamps');
+            const countEl = document.getElementById('loyaltyCount');
+            const msgEl = document.getElementById('loyaltyMessage');
+            const btnEl = document.getElementById('loyaltyStampButton');
+
+            container.innerHTML = '';
+            countEl.innerText = loyaltyStamps;
+
+            for (let i = 1; i <= 12; i++) {
+                const stamp = document.createElement('div');
+                const isStamped = i <= loyaltyStamps;
+                stamp.className = `h-14 rounded-2xl border flex flex-col items-center justify-center text-xs font-bold transition-all ${
+                    isStamped 
+                        ? 'bg-amberGlow text-espresso border-amberGlow shadow-md' 
+                        : 'bg-espresso/50 border-amberGlow/20 text-cream/40'
+                }`;
+                stamp.innerHTML = `
+                    <span>${i}</span>
+                    ${isStamped ? '<i class="fa-solid fa-seedling text-[10px] mt-0.5"></i>' : '<span class="text-[9px] font-normal opacity-60">stamp</span>'}
+                `;
+                container.appendChild(stamp);
+            }
+
+            if (loyaltyStamps === 6) {
+                msgEl.innerText = "🎉 Milestone reached: 50% off your drink or snack!";
+            } else if (loyaltyStamps >= 12) {
+                msgEl.innerText = "🏆 Card completed! Enjoy your FREE signature drink!";
+                btnEl.innerText = "Redeem Reward & Reset Card";
+            } else {
+                msgEl.innerText = `${12 - loyaltyStamps} more visit(s) until your free signature drink!`;
+                btnEl.innerText = "Record completed purchase";
+            }
+        }
+
+        function recordLoyaltyPurchase() {
+            if (loyaltyStamps >= 12) {
+                loyaltyStamps = 0;
+            } else {
+                loyaltyStamps++;
+            }
+            localStorage.setItem('atoasis_loyalty_stamps', loyaltyStamps);
+            updateLoyaltyDisplay();
+        }
+
+        // Custom Icons Logic
+        function applyCustomIcon() {
+            const cardKey = document.getElementById('customizerCardSelect').value;
+            const iconName = document.getElementById('customizerIconSelect').value;
+            const slot = document.getElementById(`icon-slot-${cardKey}`);
+            if (slot) {
+                slot.innerHTML = `<i data-lucide="${iconName}"></i>`;
+                lucide.createIcons();
+            }
+            closeModal('iconCustomizerModal');
+        }
+
+        // Initialize on Load
+        window.addEventListener('DOMContentLoaded', () => {
             renderMenu(menuItems);
-            renderLoyaltyCard();
+            updateLoyaltyDisplay();
             lucide.createIcons();
         });
     </script>
